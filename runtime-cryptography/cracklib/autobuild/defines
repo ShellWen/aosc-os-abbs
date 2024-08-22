@@ -11,3 +11,4 @@ AUTOTOOLS_AFTER=(
     '--without-python'
     '--with-default-dict=/usr/share/cracklib/pw_dict'
 )
+NOPYTHON2=1
