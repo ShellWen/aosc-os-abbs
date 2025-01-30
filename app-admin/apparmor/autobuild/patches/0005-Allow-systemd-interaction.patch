@@ -1,0 +1,49 @@
+From ca6d70be6d529fb230a58cf8b6c89db67e283d0c Mon Sep 17 00:00:00 2001
+From: Alessandro Astone <alessandro.astone@canonical.com>
+Date: Thu, 10 Apr 2025 14:44:42 +0200
+Subject: [PATCH 5/5] Allow systemd interaction
+
+Gbp-Pq: ubuntu/samba-systemd-interaction.patch.
+---
+ profiles/apparmor.d/usr.sbin.smbd | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/profiles/apparmor.d/usr.sbin.smbd b/profiles/apparmor.d/usr.sbin.smbd
+index aa2869df3..6151461d6 100644
+--- a/profiles/apparmor.d/usr.sbin.smbd
++++ b/profiles/apparmor.d/usr.sbin.smbd
+@@ -26,12 +26,22 @@ profile smbd /usr/{bin,sbin}/smbd {
+ 
+   signal send set=term peer=samba-bgqd,
+ 
++  # when started by systemd
++  ptrace read peer=unconfined,
++
+   /etc/mtab r,
+   /etc/netgroup r,
+   /etc/printcap r,
+   /etc/samba/* rwk,
+   @{PROC}/@{pid}/mounts r,
+   @{PROC}/sys/kernel/core_pattern r,
++
++  # https://gitlab.com/apparmor/apparmor/-/issues/203
++  # needed when smbd is started by systemd
++  @{PROC}/1/environ r,
++  @{PROC}/cmdline r,
++  @{PROC}/sys/kernel/osrelease r,
++
+   /usr/lib*/samba/vfs/*.so mr,
+   /usr/lib*/samba/auth/*.so mr,
+   /usr/lib*/samba/charset/*.so mr,
+@@ -56,6 +66,8 @@ profile smbd /usr/{bin,sbin}/smbd {
+   @{run}/samba/** rk,
+   @{run}/samba/ncalrpc/ rw,
+   @{run}/samba/ncalrpc/** rw,
++  # when started by systemd
++  @{run}/systemd/notify w,
+   /var/spool/samba/** rw,
+ 
+   @{HOMEDIRS}/** lrwk,
+-- 
+2.49.0
+
