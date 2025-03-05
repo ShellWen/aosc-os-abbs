@@ -1,0 +1,81 @@
+diff --git a/bottles/frontend/main.py b/bottles/frontend/main.py
+index 9f4a5525..fe1053d8 100644
+--- a/bottles/frontend/main.py
++++ b/bottles/frontend/main.py
+@@ -26,7 +26,6 @@ from os import path
+ gi.require_version("Gtk", "4.0")
+ gi.require_version("Adw", "1")
+ gi.require_version("GtkSource", "5")
+-gi.require_version("Xdp", "1.0")
+ # gi.require_version("XdpGtk4", "1.0")
+ 
+ from gi.repository import Gtk, Gio, GLib, GObject, Adw  # type: ignore
+diff --git a/bottles/frontend/windows/main_window.py b/bottles/frontend/windows/main_window.py
+index 79bf0d72..fe28d46b 100644
+--- a/bottles/frontend/windows/main_window.py
++++ b/bottles/frontend/windows/main_window.py
+@@ -21,7 +21,7 @@ import webbrowser
+ from gettext import gettext as _
+ from typing import Optional
+ 
+-from gi.repository import Gtk, GLib, Gio, Adw, GObject, Gdk, Xdp
++from gi.repository import Gtk, GLib, Gio, Adw, GObject, Gdk
+ 
+ from bottles.backend.globals import Paths
+ from bottles.backend.health import HealthChecker
+@@ -100,33 +100,30 @@ class MainWindow(Adw.ApplicationWindow):
+             manager.set_color_scheme(Adw.ColorScheme.FORCE_DARK)
+ 
+         # Be VERY explicit that non-sandboxed environments are unsupported
+-        if not Xdp.Portal.running_under_sandbox():
+-
+-            def response(dialog, response, *args):
+-                if response == "close":
+-                    quit(1)
+-
+-            body = _(
+-                "Bottles is only supported within a sandboxed environment. Official sources of Bottles are available at"
+-            )
+-            download_url = "usebottles.com/download"
++        # Flatpak introspection using Xdp removed for RPM package.
++        # https://bugzilla.redhat.com/show_bug.cgi?id=2336311
++        def response(dialog, response, *args):
++            if response == "close":
++                return
++
++        body = _(
++             "Bottles developers (upstream) only support Flatpak. Please report any issues with the RPM package in"
++        )
++        bug_url = "bugz.fedoraproject.org/bottles"
+ 
+-            error_dialog = Adw.AlertDialog.new(
+-                _("Unsupported Environment"),
+-                f"{body} <a href='https://{download_url}' title='https://{download_url}'>{download_url}.</a>",
+-            )
++        error_dialog = Adw.AlertDialog.new(
++            _("RPM Package Note"),
++            f"{body} <a href='https://{bug_url}' title='https://{bug_url}'>Bugzilla.</a>"
++        )
+ 
+-            error_dialog.add_response("close", _("Close"))
+-            error_dialog.set_body_use_markup(True)
+-            error_dialog.connect("response", response)
+-            error_dialog.present(self)
+-            logging.error(
+-                _(
+-                    "Bottles is only supported within a sandboxed format. Official sources of Bottles are available at:"
+-                )
+-            )
+-            logging.error("https://usebottles.com/download/")
+-            return
++        error_dialog.add_response("close", _("Understood"))
++        error_dialog.set_body_use_markup(True)
++        error_dialog.connect("response", response)
++        error_dialog.present(self)
++        logging.warn(_("Bottles is only supported within a sandboxed format. Official sources of Bottles are available at:"))
++        logging.warn("https://usebottles.com/download/")
++        logging.warn(_("Please report any issues using the RPM package to:"))
++        logging.warn("https://bugz.fedoraproject.org/bottles")
+ 
+         # Loading view
+         self.page_loading = LoadingView()
