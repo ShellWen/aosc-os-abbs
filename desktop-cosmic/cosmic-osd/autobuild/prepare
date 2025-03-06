@@ -1,0 +1,2 @@
+abinfo "Override default polkit path"
+export POLKIT_AGENT_HELPER_1="/usr/lib/polkit-1/polkit-agent-helper-1"
