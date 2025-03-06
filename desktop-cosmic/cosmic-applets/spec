@@ -1,0 +1,8 @@
+UPSTREAM_VER=1.0.0-alpha.7
+VER=${UPSTREAM_VER/\-/\~}
+SRCS="git::commit=tags/epoch-${UPSTREAM_VER}::https://github.com/pop-os/cosmic-applets"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=375151"
+
+# Note: Requires at least 32GiB of memory to build.
+ENVREQ="total_mem=25"
