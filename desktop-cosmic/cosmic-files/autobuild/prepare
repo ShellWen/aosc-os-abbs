@@ -1,0 +1,4 @@
+# FIXME: error: The prebuilt `sys.rs` may not be compatible with your target,
+# please use bindgen feature to generate new `sys.rs` of your arch
+# or use `--cfg=io_uring_skip_arch_check` to skip the check.
+export RUSTFLAGS="${RUSTFLAGS} --cfg=io_uring_skip_arch_check"

@@ -1,0 +1,12 @@
+PKGNAME=cosmic-files
+PKGSEC=COSMIC
+PKGDEP="bzip2 gcc-runtime glib glibc libxkbcommon xz"
+BUILDDEP="rustc llvm just"
+PKGDES="File manager for COSMIC Desktop Environment"
+USECLANG=1
+ABTYPE=rust
+
+# FIXME: ld.lld is not yet available for loongson3.
+# ld.lld: error: relocation R_MIPS_64 cannot be used against local symbol; 
+# recompile with -fPIC
+NOLTO__LOONGSON3=1
