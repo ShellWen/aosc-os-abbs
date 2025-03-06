@@ -1,0 +1,13 @@
+PKGNAME=cosmic-settings-daemon
+PKGSEC=COSMIC
+PKGDEP="acpid gcc-runtime geoclue2 libinput linux-pam playerctl pop-gtk-theme \
+        pulseaudio systemd"
+BUILDDEP="rustc llvm just"
+PKGDES="Settings daemon for COSMIC Desktop Environment"
+USECLANG=1
+ABTYPE=rust
+
+# FIXME: ld.lld is not yet available for loongson3.
+# ld.lld: error: relocation R_MIPS_64 cannot be used against local symbol; 
+# recompile with -fPIC
+NOLTO__LOONGSON3=1
