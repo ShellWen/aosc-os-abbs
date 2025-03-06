@@ -1,0 +1,17 @@
+PKGNAME=cosmic-session
+PKGSEC=COSMIC
+PKGDEP="cosmic-app-library cosmic-applets cosmic-bg cosmic-comp cosmic-files \
+        cosmic-icons cosmic-idle cosmic-launcher cosmic-notifications \
+        cosmic-osd cosmic-panel cosmic-randr cosmic-screenshot \
+        cosmic-settings cosmic-settings-daemon cosmic-workspaces dconf \
+        gcc-runtime glibc orca switcheroo-control system-config-printer \
+        xdg-user-dirs xwayland"
+BUILDDEP="rustc llvm just"
+PKGDES="Session manager for COSMIC desktop environment"
+USECLANG=1
+ABTYPE=rust
+
+# FIXME: ld.lld is not yet available for loongson3.
+# ld.lld: error: relocation R_MIPS_64 cannot be used against local symbol; 
+# recompile with -fPIC
+NOLTO__LOONGSON3=1
