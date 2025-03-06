@@ -1,0 +1,12 @@
+PKGNAME=cosmic-notifications
+PKGSEC=COSMIC
+PKGDEP="gcc-runtime glibc libxkbcommon"
+BUILDDEP="rustc llvm just"
+PKGDES="Notifications daemon for COSMIC Desktop Environment"
+USECLANG=1
+ABTYPE=rust
+
+# FIXME: ld.lld is not yet available for loongson3.
+# ld.lld: error: relocation R_MIPS_64 cannot be used against local symbol; 
+# recompile with -fPIC
+NOLTO__LOONGSON3=1

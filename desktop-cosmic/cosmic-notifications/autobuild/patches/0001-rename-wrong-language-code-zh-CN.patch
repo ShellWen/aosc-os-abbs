@@ -1,0 +1,14 @@
+From f308fb8240d52bed5c52cbc34117b167a2582138 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=E9=93=BA=E7=9B=96=E5=B4=BD?= <i@pugai.life>
+Date: Thu, 1 May 2025 06:35:14 +0800
+Subject: [PATCH] fix: i18n wrong language code zh_CN
+
+---
+ i18n/{zh_CN => zh-CN}/cosmic_notifications.ftl | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename i18n/{zh_CN => zh-CN}/cosmic_notifications.ftl (100%)
+
+diff --git a/i18n/zh_CN/cosmic_notifications.ftl b/i18n/zh-CN/cosmic_notifications.ftl
+similarity index 100%
+rename from i18n/zh_CN/cosmic_notifications.ftl
+rename to i18n/zh-CN/cosmic_notifications.ftl
