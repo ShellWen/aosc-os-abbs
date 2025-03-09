@@ -1,5 +1,5 @@
-VER=6.12.0.206
+VER=6.14.0
 REL=1
-SRCS="git::commit=tags/mono-$VER::https://github.com/mono/mono.git"
+SRCS="git::commit=tags/mono-$VER::https://gitlab.winehq.org/mono/mono.git"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=6360"

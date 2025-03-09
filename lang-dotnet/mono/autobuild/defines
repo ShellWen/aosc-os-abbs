@@ -4,23 +4,29 @@ PKGDES="An open source implementation of Microsoft's .NET Framework"
 PKGDEP="libgdiplus python-3 zlib"
 BUILDDEP="curl devel-base git"
 
-ABSHADOW=0
-
 # FTBFS with LTO
+#
 # mono-tls.c:234: error: undefined reference to 'mono_tls_thread'
 # mono-tls.c:235: error: undefined reference to 'mono_tls_jit_tls'
 # mono-tls.c:236: error: undefined reference to 'mono_tls_domain'
 # mono-tls.c:237: error: undefined reference to 'mono_tls_lmf_addr'
 # collect2: error: ld returned 1 exit status
 NOLTO=1
-
 NOSTATIC=0
 
-AUTOTOOLS_DEF=""
+# FIXME: Upstream mess-up with default flags.
+#
+# configure: error: unrecognized options: --disable-embed-check, --with-libgc-threads
 AUTOTOOLS_STRICT=0
-AUTOTOOLS_AFTER="--prefix=/usr \
-                 --sysconfdir=/etc \
-                 --disable-llvm \
-                 PYTHON=/usr/bin/python3"
 
-FAIL_ARCH="!(amd64|arm64|ppc64el)"
+# FIXME: Broken libgc support except on x86-64.
+AUTOTOOLS_AFTER=(
+    '--prefix=/usr'
+    '--sysconfdir=/etc'
+    '--with-libgc=none'
+)
+# Note: No option for system libgc, only "included" or "none".
+AUTOTOOLS_AFTER__AMD64=(
+    "${AUTOTOOLS_AFTER[@]}"
+    '--with-libgc=included'
+)
