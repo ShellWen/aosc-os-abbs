@@ -1,0 +1,5 @@
+# NOTE: pdal nitro is a fork of https://github.com/mdaus/nitro
+VER=2.7dev-8
+SRCS="git::commit=tags/$VER::https://github.com/hobu/nitro"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=312798"
