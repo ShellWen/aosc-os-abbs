@@ -1,0 +1,34 @@
+From ebfc7eb30a321b12331f6fd336328ae122aa1085 Mon Sep 17 00:00:00 2001
+From: pch666777 <1005100717@qq.com>
+Date: Mon, 14 Apr 2025 21:29:27 +0800
+Subject: [PATCH 2/2] tiledb: cmake build fix find zstd lib
+
+---
+ cmake/Modules/FindZstd.cmake | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+diff --git a/cmake/Modules/FindZstd.cmake b/cmake/Modules/FindZstd.cmake
+index a99426302..88829f686 100644
+--- a/cmake/Modules/FindZstd.cmake
++++ b/cmake/Modules/FindZstd.cmake
+@@ -27,10 +27,11 @@
+ # This module defines:
+ #   - The ${ZSTD_TARGET} imported target
+ 
+-find_package(zstd CONFIG REQUIRED)
++find_package(PkgConfig REQUIRED)
++pkg_check_modules(ZSTD REQUIRED libzstd)
+ # Unified target introduced in zstd 1.5.6.
+-if (TARGET zstd::libzstd)
+-  set(ZSTD_TARGET zstd::libzstd)
+-else()
+-  set(ZSTD_TARGET $<IF:$<TARGET_EXISTS:zstd::libzstd_shared>,zstd::libzstd_shared,zstd::libzstd_static>)
+-endif()
++#if (TARGET zstd::libzstd)
++#  set(ZSTD_TARGET zstd::libzstd)
++#else()
++#  set(ZSTD_TARGET $<IF:$<TARGET_EXISTS:zstd::libzstd_shared>,zstd::libzstd_shared,zstd::libzstd_static>)
++#endif()
+-- 
+2.49.0
+

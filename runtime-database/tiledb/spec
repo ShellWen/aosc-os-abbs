@@ -1,0 +1,4 @@
+VER=2.27.2
+SRCS="git::commit=tags/$VER::https://github.com/TileDB-Inc/TileDB"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=377885"
