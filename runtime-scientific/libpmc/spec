@@ -1,0 +1,5 @@
+VER=2025.01.29
+# FIXME: No tag yet.
+SRCS="git::commit=66892582006fcd9a225cbe1589461980c04b96a1::https://github.com/jingnanshi/pmc"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=377911"
