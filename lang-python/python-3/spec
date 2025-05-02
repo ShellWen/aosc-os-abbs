@@ -1,5 +1,5 @@
-VER=3.10.13
-REL=7
-SRCS="tbl::https://www.python.org/ftp/python/$VER/Python-$VER.tar.xz"
-CHKSUMS="sha256::5c88848668640d3e152b35b4536ef1c23b2ca4bd2c957ef1ecbb053f571dd3f6"
+VER=3.14.0~b1
+SRCS="tbl::https://www.python.org/ftp/python/${VER/~*/}/Python-${VER/\~/}.tar.xz"
+CHKSUMS="sha256::2ddd30a77c9f62e065ce648664a254b9b0c011bcdaa8c1c2787087e644cbeb39"
 CHKUPDATE="anitya::id=13254"
+PKGREBUILD__ABI="sodep revdep section::lang-python path::usr/lib/python path::cpython-3.*\\.pyc"
