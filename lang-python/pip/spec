@@ -1,4 +1,4 @@
-VER=22.3.1
+VER=25.1
 SRCS="tbl::https://github.com/pypa/pip/archive/${VER}.tar.gz"
-CHKSUMS="sha256::8d9f7cd8ad0d6f0c70e71704fd3f0f6538d70930454f1f21bbc2f8e94f6964ee"
+CHKSUMS="sha256::990bda6f11b02b4e4cb6bd3581a5dbaed105838e7a4ec765cb3dc0c2bdbef7ca"
 CHKUPDATE="anitya::id=6529"
