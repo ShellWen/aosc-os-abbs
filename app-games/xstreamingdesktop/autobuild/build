@@ -1,0 +1,30 @@
+abinfo "Building xstreamingdesktop ..."
+
+yarn install
+yarn build
+
+abinfo "Installing xstreamingdesktop ..."
+mkdir -pv "$PKGDIR"/usr/lib/xstreamingdesktop/
+cp -av "$SRCDIR"/dist/linux-unpacked/* "$PKGDIR"/usr/lib/xstreamingdesktop
+chmod +x "$PKGDIR"/usr/lib/xstreamingdesktop/xstreaming
+
+mkdir -pv "$PKGDIR"/usr/bin
+ln -sv ../lib/$PKGNAME/xstreaming "$PKGDIR"/usr/bin/xstreamingdesktop
+
+abinfo "Installing icon ..."
+mkdir -pv "$PKGDIR"/usr/share/pixmaps/
+install -v -m644 "$SRCDIR"/resources/XStreaming.png "$PKGDIR"/usr/share/pixmaps/
+
+abinfo "Installing .desktop entry ..."
+DESKTOP_FILE="$PKGDIR"/usr/share/applications/XStreamingDesktop.desktop
+mkdir -pv "$(dirname "$DESKTOP_FILE")"
+cat > "$DESKTOP_FILE" << EOF
+[Desktop Entry]
+Name=XStreamingDesktop
+Exec=/usr/lib/$PKGNAME/xstreaming
+Icon=XStreaming
+Terminal=false
+Type=Application
+Categories=Game;
+EOF
+chmod 644 "$DESKTOP_FILE"
