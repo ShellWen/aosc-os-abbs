@@ -1,0 +1,42 @@
+From a055a2e1d49861e99156dfd4e336561c022be09e Mon Sep 17 00:00:00 2001
+From: Harald van Dijk <harald@gigawatt.nl>
+Date: Thu, 15 Jun 2023 23:18:11 +0100
+Subject: [PATCH 2/3] ARCHLINUX: Fix handling of untranslated nodes
+X-Developer-Signature: v=1; a=openpgp-sha256; l=1090; i=xtexchooser@duck.com;
+ h=from:subject; bh=3bSCfWmIRY8iq3cKjhScOnFYpt95wGioTEbYA6daphY=;
+ b=owGbwMvMwCW2U4Ij7wZL9ETG02pJDBniFpNabTUuys+sW8uYt/lP49RmwXfSnRGGxc9mPPi8P
+ V2HR7i2o5SFQYyLQVZMkaXIsMGbVSedX3RZuSzMHFYmkCEMXJwCMBHebIa/gm+bHfgDbvO+PJ51
+ zSb0n1WP5H2BrS4PhBNsdu7Mmafkz8hwb1PDbtGvdVnGU9NXuSn+PMH2zvH+2jD5yDqu3fd9V+9
+ mAgA=
+X-Developer-Key: i=xtexchooser@duck.com; a=openpgp;
+ fpr=7231804B052C670F15A6771DB918086ED8045B91
+
+If a translation is missing, get_translated returns the node it was
+called with. But ph_node when passed to get_translated is part of
+another document and cannot just be reparented, it needs to be cloned.
+The reparenting leaves things in an inconsistent state where references
+intended to refer to nodes in the original document no longer do so, and
+they may then be accessed from those references after the new document
+has already been freed.
+
+Fixes bug #36.
+---
+ itstool.in | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/itstool.in b/itstool.in
+index 8e8c657aa352..0e273b4c5bfa 100755
+--- a/itstool.in
++++ b/itstool.in
+@@ -1109,6 +1109,8 @@ class Document (object):
+                         child.replaceNode(newnode)
+                     else:
+                         repl = self.get_translated(ph_node, translations, strict=strict, lang=lang)
++                        if repl == ph_node:
++                            repl = repl.copyNode(1)
+                         child.replaceNode(repl)
+                 scan_node(child)
+         try:
+-- 
+2.49.0
+

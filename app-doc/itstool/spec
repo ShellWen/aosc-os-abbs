@@ -1,4 +1,4 @@
-VER=2.0.7
-SRCS="tbl::http://files.itstool.org/itstool/itstool-$VER.tar.bz2"
-CHKSUMS="sha256::6b9a7cd29a12bb95598f5750e8763cee78836a1a207f85b74d8b3275b27e87ca"
+VER=2.0.7+git20250326
+SRCS="git::commit=19f9580f27aa261ea383b395fdef7e153f3f9e6d::https://github.com/itstool/itstool.git"
+CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=13109"
