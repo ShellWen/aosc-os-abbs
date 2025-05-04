@@ -1,5 +1,5 @@
-VER=0.8.0
-REL=1
-SRCS="tbl::https://cgdb.me/files/cgdb-$VER.tar.gz"
-CHKSUMS="sha256::0d38b524d377257b106bad6d856d8ae3304140e1ee24085343e6ddf1b65811f1"
+VER=0.8.1
+COMMIT=6bbf5c4a5feb54fdd6a08090ec71dd8635815364
+SRCS="git::commit=$COMMIT::https://github.com/cgdb/cgdb.git"
+CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=13935"
