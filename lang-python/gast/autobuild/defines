@@ -1,7 +1,8 @@
 PKGNAME=gast
 PKGSEC=python
-BUILDDEP="setuptools"
+BUILDDEP="setuptools setuptools-python2"
 PKGDES="A library providing generic AST to represent Python2 and Python3's AST"
 
 ABTYPE=python
 ABSPLITDBG=0
+PKGDEP="python-2 python-3"
