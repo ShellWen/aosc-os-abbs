@@ -2,3 +2,4 @@ VER=8.02.01
 SRCS="git::commit=tags/$VER::https://github.com/camlp5/camlp5"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=16412"
+REL=1
