@@ -1,0 +1,3 @@
+# https://aur.archlinux.org/cgit/aur.git/commit/?h=pygtk&id=8147e6ea96544eb176482832fbb27c463ebcbc09
+abinfo "Setting -fpermissive to workaround GCC 14+ ..."
+export CFLAGS="-fpermissive"
