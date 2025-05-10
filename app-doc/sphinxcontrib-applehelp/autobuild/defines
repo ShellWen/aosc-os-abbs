@@ -1,6 +1,6 @@
 PKGNAME=sphinxcontrib-applehelp
 PKGSEC=python
-PKGDEP="python-3 sphinx"
+PKGDEP="python-3"
 BUILDDEP="flit-core"
 PKGDES="Sphinx extension which outputs Apple help books"
 
