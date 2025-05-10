@@ -1,6 +1,6 @@
 PKGNAME=sphinxcontrib-websupport
 PKGSEC=python
-PKGDEP="python-3 sphinx"
+PKGDEP="python-3"
 BUILDDEP="flit-core"
 PKGDES="Sphinx API for Web Apps"
 
