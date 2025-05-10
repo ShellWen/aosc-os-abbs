@@ -1,7 +1,7 @@
 PKGNAME=pygraphviz
 PKGSEC=python
-PKGDEP="graphviz"
-BUILDDEP="setuptools"
+PKGDEP="graphviz python-2 python-3"
+BUILDDEP="setuptools setuptools-python2"
 PKGDES="Python interface to the Graphviz"
 
 ABTYPE=python
