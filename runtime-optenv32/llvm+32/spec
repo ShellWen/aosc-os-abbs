@@ -3,3 +3,4 @@ SRCS="https://github.com/llvm/llvm-project/releases/download/llvmorg-$VER/llvm-p
 SUBDIR="llvm-project-$VER.src/llvm"
 CHKSUMS="sha256::0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a"
 CHKUPDATE="anitya::id=1830"
+REL=1
