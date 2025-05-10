@@ -1,6 +1,6 @@
 PKGNAME=sphinxcontrib-jsmath
 PKGSEC=python
-PKGDEP="python-3 sphinx"
+PKGDEP="python-3"
 BUILDDEP="flit-core"
 PKGDES="Sphinx extension which renders display math in HTML via JavaScript"
 
