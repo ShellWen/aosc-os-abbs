@@ -2,3 +2,4 @@ VER=1.4.4
 SRCS="tbl::https://github.com/VcDevel/Vc/archive/refs/tags/$VER.tar.gz"
 CHKSUMS="sha256::5933108196be44c41613884cd56305df320263981fe6a49e648aebb3354d57f3"
 CHKUPDATE="anitya::id=16034"
+REL=1
