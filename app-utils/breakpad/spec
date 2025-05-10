@@ -1,5 +1,9 @@
-VER=20200909
-REL=2
-SRCS="git::commit=9c4671f2e3a63c0f155d9b2511192d0b5fa7f760::https://github.com/google/breakpad"
-CHKSUMS="SKIP"
-CHKUPDATE="anitya::id=231555"
+UPSTREAM_VER=2024.02.16
+LSS_VER=2024.02.01
+VER=${UPSTREAM_VER}+lss${LSS_VER}
+SRCS="git::commit=tags/v${UPSTREAM_VER}::https://github.com/google/breakpad \
+      git::commit=tags/v${LSS_VER};rename=lss::https://chromium.googlesource.com/linux-syscall-support"
+CHKSUMS="SKIP \
+         SKIP"
+CHKUPDATE="anitya::id=373970"
+SUBDIR=breakpad
