@@ -1,5 +1,5 @@
 PKGNAME=pycryptodomex
 PKGSEC=python
 PKGDEP="python-2 python-3"
-BUILDDEP="setuptools"
+BUILDDEP="setuptools setuptools-python2"
 PKGDES="A self-contained Python package of low-level cryptographic primitives"
