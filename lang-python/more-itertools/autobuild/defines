@@ -1,7 +1,0 @@
-PKGNAME=more-itertools
-PKGSEC=python
-PKGDEP="six python-2 python-3"
-BUILDDEP="setuptools setuptools-python2"
-PKGDES="More routines for operating on iterables, beyond itertools"
-
-ABHOST=noarch
