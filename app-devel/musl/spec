@@ -2,3 +2,4 @@ VER=1.2.5
 SRCS="tbl::https://www.musl-libc.org/releases/musl-$VER.tar.gz"
 CHKSUMS="sha256::a9a118bbe84d8764da0ea0d28b3ab3fae8477fc7e4085d90102b8596fc7c75e4"
 CHKUPDATE="anitya::id=11688"
+REL=1
