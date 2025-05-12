@@ -1,7 +1,0 @@
-PKGNAME=libclens
-PKGSEC=libs
-PKGDES="Convenience library to aid in porting code from OpenBSD"
-BUILDDEP="libbsd"
-
-NOSTATIC=0
-
