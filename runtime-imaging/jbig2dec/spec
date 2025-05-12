@@ -1,4 +1,4 @@
-VER=0.18
+VER=0.20
 SRCS="tbl::https://github.com/ArtifexSoftware/jbig2dec/archive/$VER.tar.gz"
-CHKSUMS="sha256::3be6eb8105f6dcc8a7d29d6f2b4dc9205c164a412ad940294cedf0d7cc530487"
+CHKSUMS="sha256::a9705369a6633aba532693450ec802c562397e1b824662de809ede92f67aff21"
 CHKUPDATE="anitya::id=1431"

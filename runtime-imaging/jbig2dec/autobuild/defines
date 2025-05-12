@@ -3,4 +3,5 @@ PKGSEC=libs
 PKGDEP="libpng"
 PKGDES="Decoder implementation of the JBIG2 image compression format"
 
+# FIXME: configure: error: source directory already configured; run "make distclean" there first
 ABSHADOW=0
