@@ -1,6 +1,6 @@
 PKGNAME=tqtinterface
 PKGSEC=Trinity
-PKGDEP="tqt3 pth"
+PKGDEP="tqt3"
 BUILDDEP="tde-common-cmake"
 PKGDES="Trinity Qt interface libraries for the Trinity Desktop Environment"
 
