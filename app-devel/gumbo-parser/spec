@@ -1,0 +1,4 @@
+VER=0.13.1
+SRCS="git::commit=tags/$VER::https://codeberg.org/gumbo-parser/gumbo-parser"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=214990"

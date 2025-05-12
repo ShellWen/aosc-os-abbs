@@ -1,0 +1,10 @@
+PKGNAME=gumbo-parser
+PKGSEC=devel
+PKGDEP="glibc"
+PKGDES="An implementation of the HTML5 parsing algorithm"
+
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dtests=false'
+    '-Dexamples=false'
+)
