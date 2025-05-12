@@ -1,0 +1,8 @@
+if systemctl -q is-active ; do
+	echo "-- PostgreSQL server is running, shutting down ..."
+	. /usr/share/debconf/confmodule
+	db_get postgresql/notice_downtime
+	systemctl stop postgresqld.service
+else
+	echo "-- PostgreSQL server is not running, continuing install."
+fi
