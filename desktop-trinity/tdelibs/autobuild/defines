@@ -20,47 +20,44 @@ BUILDDEP="tde-common-cmake"
 PKGDES="Shared runtime libraries for the Trinity Desktop Environment"
 
 ABTYPE=cmake
-CMAKE_AFTER="-DCMAKE_NO_BUILTIN_CHRPATH=ON \
-             -DCMAKE_SKIP_RPATH=OFF \
-             -DWITH_ALL_OPTIONS=ON \
-             -DWITH_LUA=OFF \
-             -DWITH_LIBBFD=OFF \
-             -DWITH_KDE4_MENU_SUFFIX=OFF \
-             -DWITH_TDEICONLOADER_DEBUG=OFF \
-             -DWITH_ELFICON=OFF \
-             -DWITH_NETWORK_MANAGER_BACKEND=ON \
-             -DWITH_SUDO_TDESU_BACKEND=OFF \
-             -DWITH_OLD_XDG_STD=OFF \
-             -DWITH_KDE4_MENU_SUFFIX=OFF \
-             -DWITH_LOGINDPOWER=ON \
-             -DWITH_CONSOLEKIT=OFF \
-             -DLIB_INSTALL_DIR=/usr/lib \
-             -Wno-dev"
-CMAKE_AFTER__RETRO=" \
-             ${CMAKE_AFTER} \
-             -DWITH_OPENEXR=OFF \
-             -DWITH_ASPELL=OFF \
-             -DWITH_HSPELL=OFF \
-             -DWITH_UPOWER=OFF \
-             -DWITH_LUA=OFF \
-             -DWITH_GAMIN=OFF \
-             -DWITH_UDISKS=OFF \
-             -DWITH_UDISKS2=ON \
-             -DWITH_UDEVIL=OFF"
-CMAKE_AFTER__ARMV4="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__ARMV6HF="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__ARMV7HF="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__I486="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__LOONGSON2F="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__M68K="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__POWERPC="${CMAKE_AFTER__RETRO}"
-CMAKE_AFTER__PPC64="${CMAKE_AFTER__RETRO}"
+CMAKE_AFTER=(
+    '-DCMAKE_NO_BUILTIN_CHRPATH=ON'
+    '-DDCMAKE_SKIP_RPATH=OFF'
+    '-DDWITH_ALL_OPTIONS=ON'
+    '-DDWITH_LUA=OFF'
+    '-DDWITH_LIBBFD=OFF'
+    '-DDWITH_KDE4_MENU_SUFFIX=OFF'
+    '-DDWITH_TDEICONLOADER_DEBUG=OFF'
+    '-DDWITH_ELFICON=OFF'
+    '-DDWITH_NETWORK_MANAGER_BACKEND=ON'
+    '-DDWITH_SUDO_TDESU_BACKEND=OFF'
+    '-DDWITH_OLD_XDG_STD=OFF'
+    '-DDWITH_KDE4_MENU_SUFFIX=OFF'
+    '-DDWITH_LOGINDPOWER=ON'
+    '-DDWITH_CONSOLEKIT=OFF'
+    '-DDLIB_INSTALL_DIR=/usr/lib'
+    '-DDWITH_GAMIN=OFF'
+    '-Wno-dev'
+)
+CMAKE_AFTER__RETRO=(
+    "${CMAKE_AFTER[@]}"
+    '-DDWITH_OPENEXR=OFF'
+    '-DDWITH_ASPELL=OFF'
+    '-DDWITH_HSPELL=OFF'
+    '-DDWITH_UPOWER=OFF'
+    '-DDWITH_LUA=OFF'
+    '-DDWITH_UDISKS=OFF'
+    '-DDWITH_UDISKS2=ON'
+    '-DDWITH_UDEVIL=OFF'
+)
 
+# Note: Needed for applications.
+NOSTATIC=0
+
+# Note: Required for component detection.
+NOLIBTOOL=0
+
+# FIXME: Relinking during installation would fail with `cmake build'.
 ABUSECMAKEBUILD=0
 
-NOSTATIC=0
 PKGCONFL="kdelibs kde-runtime"
-
-NOLTO__LOONGSON3=1
-
-NOLIBTOOL=0
