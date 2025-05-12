@@ -1,8 +1,8 @@
 PKGNAME=openscenegraph
 PKGSEC=libs
-PKGDEP="curl giflib jasper librsvg libvncserver openexr poppler pth qt-5 \
-        xine-lib libglvnd gdal"
-PKGDES="An Open Source, high performance real-time graphics toolkit"
+PKGDEP="curl giflib jasper librsvg libvncserver openexr poppler qt-5 xine-lib \
+        libglvnd gdal"
+PKGDES="Real-time graphics toolkit"
 
 PKGEPOCH=3
 PKGBREAK="flightgear<=2020.3.11 openmw<=0.47.0 simgear<=2018.2.2-2"
