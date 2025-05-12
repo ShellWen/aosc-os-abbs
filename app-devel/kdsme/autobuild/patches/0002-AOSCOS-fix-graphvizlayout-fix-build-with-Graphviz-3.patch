@@ -1,0 +1,33 @@
+From bec60735ae1996918824560e95a06e6fdb0e33d7 Mon Sep 17 00:00:00 2001
+From: Mingcong Bai <jeffbai@aosc.io>
+Date: Mon, 12 May 2025 19:37:22 +0800
+Subject: [PATCH 2/2] AOSCOS: fix(graphvizlayout): fix build with Graphviz >= 3
+
+The original condition checks for GRAPHVIZ_MAJOR_VERSION >=2 and
+GRAPHVIZ_MINOR_VERSION >= 20, whereas, at
+the time of writing this patch, AOSC OS ships 12.2.1.
+
+Group the original condition and add an OR condition for
+GRAPHVIZ_MAJOR_VERSION >= 3.
+
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ src/core/layout/graphvizlayout/graphvizlayouterbackend.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/core/layout/graphvizlayout/graphvizlayouterbackend.cpp b/src/core/layout/graphvizlayout/graphvizlayouterbackend.cpp
+index 2fb9cd9..ec83798 100644
+--- a/src/core/layout/graphvizlayout/graphvizlayouterbackend.cpp
++++ b/src/core/layout/graphvizlayout/graphvizlayouterbackend.cpp
+@@ -461,7 +461,7 @@ QRectF GraphvizLayouterBackend::Private::labelRectForEdge(Agedge_t* edge) const
+ 
+     // note that the position attributes in graphviz point to the *center* of this element.
+     // we need to subtract half of the width/height to get the top-left position
+-#if GRAPHVIZ_MAJOR_VERSION >= 2 && GRAPHVIZ_MINOR_VERSION > 20
++#if (GRAPHVIZ_MAJOR_VERSION >= 2 && GRAPHVIZ_MINOR_VERSION > 20) || GRAPHVIZ_MAJOR_VERSION >= 3
+     const double posx = ED_label(edge)->pos.x;
+     const double posy = ED_label(edge)->pos.y;
+ #else
+-- 
+2.49.0
+
