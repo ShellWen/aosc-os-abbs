@@ -1,1 +1,0 @@
-install -Dm644 terminfo/fbterm "$PKGDIR"/usr/share/terminfo/f/fbterm
