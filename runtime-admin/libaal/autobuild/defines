@@ -3,12 +3,12 @@ PKGSEC=libs
 PKGDEP="glibc"
 PKGDES="Application abstraction library for Reiser4"
 
-AUTOTOOLS_AFTER="--enable-libminimal \
-                 --enable-memory-manager \
-                 --enable-largefile"
+AUTOTOOLS_AFTER=(
+    '--enable-libminimal'
+    '--enable-memory-manager'
+)
 
 ABSHADOW=0
 
 # Note: reiser4progs links statically.
 NOSTATIC=0
-NOLTO=1
