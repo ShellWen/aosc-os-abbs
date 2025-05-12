@@ -5,4 +5,6 @@ BUILDDEP="boost cmake rapidjson"
 PKGDES="Collection of C++ and CMake utility libraries"
 
 NOSTATIC=0
-NOLTO__LOONGSON3=1
+
+# FIXME: Static library only.
+ABSPLITDBG=0
