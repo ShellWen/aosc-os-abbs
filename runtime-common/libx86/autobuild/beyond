@@ -1,2 +1,0 @@
-abinfo "Dropping executable bit from static libraries ..."
-chmod -v -x "$PKGDIR"/usr/lib/*.a
