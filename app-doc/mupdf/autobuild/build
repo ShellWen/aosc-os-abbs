@@ -1,0 +1,10 @@
+abinfo "Building MuDPF ..."
+make
+
+abinfo "Installing MuPDF ..."
+make install \
+    prefix=/usr \
+    DESTDIR="$PKGDIR"
+
+abinfo "Setting executable bit on shared library ..."
+chmod -v +x "$PKGDIR"/usr/lib/libmupdf.so*
