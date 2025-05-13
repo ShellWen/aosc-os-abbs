@@ -1,0 +1,11 @@
+PKGNAME=dtk6widget
+PKGSEC=dde
+PKGDEP="dtk6core dtk6gui gcc-runtime glibc librsvg qt-6 startup-notification"
+BUILDDEP="cmake ninja doxygen gtest"
+PKGDES="Base Qt widgets on Deepin."
+
+ABTYPE=cmakeninja
+CMAKE_AFTER=("-DBUILD_DOCS=ON"
+             "-DCMAKE_INSTALL_LIBDIR=lib"
+             "-DCMAKE_INSTALL_PREFIX=/usr"
+             "-DDTK_VERSION=$PKGVER")
