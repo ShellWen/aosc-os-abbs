@@ -1,0 +1,13 @@
+PKGNAME=dtk6log
+PKGSEC=dde
+PKGDEP="glibc gcc-runtime qt-6 spdlog systemd"
+BUILDDEP="cmake ninja"
+PKGDES="Simple, convinient and thread safe logger for DTK-based applications and components"
+
+ABTYPE=cmakeninja
+CMAKE_AFTER=("-DDLOG_VERSION=$PKGVER"
+             "-DCMAKE_INSTALL_LIBDIR=lib"
+             "-DCMAKE_INSTALL_INCLUDEDIR=include"
+             "-DCMAKE_INSTALL_PREFIX=/usr"
+             "-DBUILD_WITH_SYSTEMD=ON"
+             "-DBUILD_WITH_QT6=ON")
