@@ -1,0 +1,11 @@
+PKGNAME=dtk6declarative
+PKGSEC=dde
+PKGDEP="dtk6core dtk6gui gcc-runtime glibc librsvg qt-6"
+BUILDDEP="cmake ninja doxygen gtest"
+PKGDES="Widget development toolkit for deepin based on QtQuick"
+
+ABTYPE=cmakeninja
+CMAKE_AFTER=("-DCMAKE_INSTALL_LIBDIR=lib"
+             "-DCMAKE_INSTALL_PREFIX=/usr"
+             "-DDTK_VERSION=$PKGVER"
+             "-DBUILD_DOCS=ON")
