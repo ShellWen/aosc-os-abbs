@@ -1,0 +1,12 @@
+PKGNAME=dtkcommon
+PKGSEC=dde
+PKGDEP="dconf"
+BUILDDEP="cmake ninja"
+PKGDES="Common build configurations for DTK-based applications and components"
+
+ABTYPE=cmakeninja
+ABHOST=noarch
+
+CMAKE_AFTER=("-DDTK_VERSION=$PKGVER"
+             "-DCMAKE_INSTALL_LIBDIR=/usr/lib"
+             "-DCMAKE_INSTALL_PREFIX=/usr")
