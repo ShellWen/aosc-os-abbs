@@ -28,4 +28,8 @@ AUTOTOOLS_AFTER__AMD64=" \
                  ${AUTOTOOLS_AFTER} \
                  --with-docs PANDOC=/usr/bin/pandoc"
 
+# FIXME: configure.ac:285: error: possibly undefined macro: AM_ICONV
+#          If this token and others are legitimate, please use m4_pattern_allow.
+#          See the Autoconf documentation.
+RECONF=0
 NOLTO=1
