@@ -2,8 +2,9 @@ PKGNAME=libgda
 PKGSEC=gnome
 PKGDEP="desktop-file-utils gdk-pixbuf graphviz gtksourceview-3 \
         hicolor-icon-theme iso-codes json-glib libgcrypt libsecret libsoup \
-        libxslt ncurses openldap openssl postgresql sqlite sqlcipher mariadb"
-BUILDDEP="gtk-doc intltool vala"
+        libxslt ncurses openldap openssl postgresql-runtime sqlite sqlcipher \
+        mariadb"
+BUILDDEP="gtk-doc intltool vala postgresql"
 PKGDES="GNOME database abstraction library and routines"
 
 # Not enabling experimental ldap, web features.
