@@ -14,6 +14,7 @@ BUILD_OPTIONS="""
     --enable-threads
     --enable-shared
     --with-pic
+    --with-zstd
     --enable-ld
     --enable-plugins
     --disable-werror

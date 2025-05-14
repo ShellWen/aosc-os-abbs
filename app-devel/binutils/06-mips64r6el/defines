@@ -1,6 +1,6 @@
 PKGNAME=binutils+cross-mips64r6el
 PKGDEP="glibc"
-BUILDDEP="flex xz elfutils"
+BUILDDEP="flex xz elfutils zstd"
 PKGSEC=devel
 
 __CROSS="mips64r6el"

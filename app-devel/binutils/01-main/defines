@@ -1,6 +1,6 @@
 PKGNAME=binutils
 PKGSEC=devel
-PKGDEP="glibc zlib"
+PKGDEP="glibc zlib zstd"
 PKGDES="A set of programs to assemble and manipulate binaries and object files"
 # diagnostics.h moved from gdb to binutils
 PKGBREAK="gdb<=12.1-2"
@@ -17,6 +17,7 @@ AUTOTOOLS_AFTER="--prefix=/usr \
                  --enable-threads \
                  --enable-shared \
                  --with-pic \
+                 --with-zstd \
                  --enable-ld \
                  --enable-plugins \
                  --disable-werror \

@@ -1,6 +1,6 @@
 PKGNAME=binutils+cross-arm64
 PKGDEP="glibc"
-BUILDDEP="flex xz elfutils"
+BUILDDEP="flex xz elfutils zstd"
 PKGSEC=devel
 
 __CROSS="arm64"
