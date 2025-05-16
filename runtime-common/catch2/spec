@@ -2,3 +2,4 @@ VER=2.13.8
 SRCS="tbl::https://github.com/catchorg/Catch2/archive/v$VER.tar.gz"
 CHKSUMS="sha256::b9b592bd743c09f13ee4bf35fc30eeee2748963184f6bea836b146e6cc2a585a"
 CHKUPDATE="anitya::id=7680"
+REL="1"

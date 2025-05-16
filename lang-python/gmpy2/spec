@@ -2,3 +2,4 @@ VER=2.1.5
 SRCS="git::commit=tags/gmpy2-$VER::https://github.com/aleaxit/gmpy"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=7789"
+REL="1"

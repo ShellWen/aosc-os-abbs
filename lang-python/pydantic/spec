@@ -2,3 +2,4 @@ VER=2.6.0
 SRCS="git::commit=v${VER}::https://github.com/pydantic/pydantic"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=39654"
+REL="1"

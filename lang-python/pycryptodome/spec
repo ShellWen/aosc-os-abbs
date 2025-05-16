@@ -1,5 +1,5 @@
 VER=3.21.0
-REL=1
+REL="2"
 SRCS="pypi::version=$VER::pycryptodome"
 CHKSUMS="sha256::f7787e0d469bdae763b876174cf2e6c0f7be79808af26b1da96f1a64bcf47297"
 CHKUPDATE="anitya::id=36849"
