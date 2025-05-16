@@ -1,0 +1,4 @@
+# Note: required to build pycryptodomex instead of pycryptodome
+abinfo "Creating .separate_namespace ..."
+mkdir -vp "$BLDDIR"
+touch "$BLDDIR"/.separate_namespace
