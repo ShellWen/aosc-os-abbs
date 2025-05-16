@@ -1,7 +1,7 @@
-From 76575a51ce9971237541b584ad93b8c79a256bac Mon Sep 17 00:00:00 2001
+From 9fa27695ee812c75d0df15a0d4e2fe822e788a1e Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Sat, 6 May 2017 09:28:30 +0800
-Subject: [PATCH 276/333] AOSCOS: drm/radeon: Use high performance profile
+Subject: [PATCH 276/332] AOSCOS: drm/radeon: Use high performance profile
 
 Signed-off-by: Ce Sun <sunc@lemote.com>
 Signed-off-by: Huacai Chen <chenhc@lemote.com>
@@ -12,7 +12,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/radeon/radeon_pm.c b/drivers/gpu/drm/radeon/radeon_pm.c
-index 539065746db08..f5ee0cc05c2d0 100644
+index 539065746db0..f5ee0cc05c2d 100644
 --- a/drivers/gpu/drm/radeon/radeon_pm.c
 +++ b/drivers/gpu/drm/radeon/radeon_pm.c
 @@ -1354,7 +1354,7 @@ static int radeon_pm_init_old(struct radeon_device *rdev)

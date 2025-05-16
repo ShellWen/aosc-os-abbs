@@ -1,7 +1,7 @@
-From 6cb134cbc0521b7cbfceb89e21e977570123d839 Mon Sep 17 00:00:00 2001
+From d844bbd2c110c062eb2b525e59839ed42e319cab Mon Sep 17 00:00:00 2001
 From: Kexy Biscuit <kexybiscuit@aosc.io>
 Date: Tue, 25 Feb 2025 17:42:45 +0800
-Subject: [PATCH 085/333] MARKER: FROMLIST: Start of Lemote patches
+Subject: [PATCH 085/332] MARKER: FROMLIST: Start of Lemote patches
 
 Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
 ---
@@ -9,7 +9,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+)
 
 diff --git a/arch/mips/Kconfig b/arch/mips/Kconfig
-index ee163940d8407..0fa2a14f84a0b 100644
+index ee163940d840..0fa2a14f84a0 100644
 --- a/arch/mips/Kconfig
 +++ b/arch/mips/Kconfig
 @@ -504,6 +504,7 @@ config MACH_LOONGSON64

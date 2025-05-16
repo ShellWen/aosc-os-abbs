@@ -1,7 +1,7 @@
-From d1a45220262e9fe5c22d4e019a6b17a25b951d7f Mon Sep 17 00:00:00 2001
+From 1620c24b48a124866dd94d466f6835898d9d66fc Mon Sep 17 00:00:00 2001
 From: Kunyang_Fan <kunyang_fan@asus.com>
 Date: Tue, 24 Aug 2021 15:26:59 +0800
-Subject: [PATCH 138/333] UBUNTU: ODM: mfd: Check AAEON BFPI version before
+Subject: [PATCH 138/332] UBUNTU: ODM: mfd: Check AAEON BFPI version before
  adding device
 
 BugLink: https://bugs.launchpad.net/bugs/1937897
@@ -25,7 +25,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 22 insertions(+)
 
 diff --git a/drivers/mfd/mfd-aaeon.c b/drivers/mfd/mfd-aaeon.c
-index 9d2efde53cad3..74211d01ce656 100644
+index 9d2efde53cad..74211d01ce65 100644
 --- a/drivers/mfd/mfd-aaeon.c
 +++ b/drivers/mfd/mfd-aaeon.c
 @@ -16,12 +16,17 @@

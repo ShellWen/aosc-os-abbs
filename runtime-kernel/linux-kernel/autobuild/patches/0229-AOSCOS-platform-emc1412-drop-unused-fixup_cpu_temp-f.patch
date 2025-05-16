@@ -1,7 +1,7 @@
-From f23452a6bb5704b196658e99abd9a45bda4a16ef Mon Sep 17 00:00:00 2001
+From 1995f6e2ae12be088cb4579c1e4126436f842390 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 4 Dec 2024 15:49:40 +0800
-Subject: [PATCH 229/333] AOSCOS: platform: emc1412: drop unused
+Subject: [PATCH 229/332] AOSCOS: platform: emc1412: drop unused
  fixup_cpu_temp() function
 
 This function was not used anywhere and triggered -Werror=unused-function.
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 60 deletions(-)
 
 diff --git a/drivers/platform/mips/emc1412.c b/drivers/platform/mips/emc1412.c
-index bf2fa4b815c8f..6524baddd6ca2 100644
+index bf2fa4b815c8..6524baddd6ca 100644
 --- a/drivers/platform/mips/emc1412.c
 +++ b/drivers/platform/mips/emc1412.c
 @@ -336,66 +336,6 @@ static void do_thermal_timer(struct work_struct *work)

@@ -1,7 +1,7 @@
-From a98c7c4d685345b2980d06a4a31b865d55244c58 Mon Sep 17 00:00:00 2001
+From 6be700eafe4952cbfbd9839b368f5fa9038017c9 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:20 +0800
-Subject: [PATCH 081/333] BACKPORT: FROMLIST: drm/xe/regs: fix
+Subject: [PATCH 081/332] BACKPORT: FROMLIST: drm/xe/regs: fix
  RING_CTL_SIZE(size) calculation
 
 Similar to the preceding patch for GuC (and with the same references),
@@ -84,7 +84,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/xe/regs/xe_engine_regs.h b/drivers/gpu/drm/xe/regs/xe_engine_regs.h
-index b732c89816dff..e48bf80d144a1 100644
+index b732c89816df..e48bf80d144a 100644
 --- a/drivers/gpu/drm/xe/regs/xe_engine_regs.h
 +++ b/drivers/gpu/drm/xe/regs/xe_engine_regs.h
 @@ -52,7 +52,7 @@

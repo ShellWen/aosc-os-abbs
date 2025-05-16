@@ -1,7 +1,7 @@
-From 94eeab88d79da9fa46291d433d6038aa8e56111f Mon Sep 17 00:00:00 2001
+From cb4f74a4af6b7dec22264c7b5e59a458e40a8c13 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 22 Sep 2024 00:57:24 +0800
-Subject: [PATCH 179/333] AOSCOS: drm: amdgpu: use amdgpu by default for si/cik
+Subject: [PATCH 179/332] AOSCOS: drm: amdgpu: use amdgpu by default for si/cik
  devices
 
 On LoongArch, radeon causes a memory read violation that crashes
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 4 insertions(+), 14 deletions(-)
 
 diff --git a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
-index f2d77bc04e4a9..54d863f413eaa 100644
+index bb8ab25ea76a..0a460d2ca1bd 100644
 --- a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 +++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 @@ -616,13 +616,8 @@ module_param_named(timeout_period, amdgpu_watchdog_timer.period, uint, 0644);
@@ -53,7 +53,7 @@ index f2d77bc04e4a9..54d863f413eaa 100644
  module_param_named(cik_support, amdgpu_cik_support, int, 0444);
  #endif
 diff --git a/drivers/gpu/drm/radeon/radeon_drv.c b/drivers/gpu/drm/radeon/radeon_drv.c
-index 267f082bc430a..3ffe9f539683f 100644
+index 267f082bc430..3ffe9f539683 100644
 --- a/drivers/gpu/drm/radeon/radeon_drv.c
 +++ b/drivers/gpu/drm/radeon/radeon_drv.c
 @@ -240,12 +240,12 @@ module_param_named(uvd, radeon_uvd, int, 0444);
