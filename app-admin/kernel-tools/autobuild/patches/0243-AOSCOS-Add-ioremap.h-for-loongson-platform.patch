@@ -1,7 +1,7 @@
-From 58f4ed609ae9128d77d60360cab35712c4e21936 Mon Sep 17 00:00:00 2001
+From c012e7581a9a7c36543d365ba8787ea129e69452 Mon Sep 17 00:00:00 2001
 From: chenj <chenj@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
-Subject: [PATCH 243/333] AOSCOS: Add ioremap.h for loongson platform
+Subject: [PATCH 243/332] AOSCOS: Add ioremap.h for loongson platform
 
 Add loongson specific plat_ioremap to utilize uncached acceleration
 feature.
@@ -19,7 +19,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
 
 diff --git a/arch/mips/include/asm/mach-loongson64/ioremap.h b/arch/mips/include/asm/mach-loongson64/ioremap.h
 new file mode 100644
-index 0000000000000..155dafe2ef346
+index 000000000000..155dafe2ef34
 --- /dev/null
 +++ b/arch/mips/include/asm/mach-loongson64/ioremap.h
 @@ -0,0 +1,44 @@

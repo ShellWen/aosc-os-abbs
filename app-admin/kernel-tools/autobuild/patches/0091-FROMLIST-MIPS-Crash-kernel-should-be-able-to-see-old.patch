@@ -1,7 +1,7 @@
-From cb8a9f27825e29891557e91e1c4c9ac596691832 Mon Sep 17 00:00:00 2001
+From 8cb20028cff1cae9e4c426161e0d5e1419f9601c Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 24 Sep 2020 18:07:57 +0800
-Subject: [PATCH 091/333] FROMLIST: MIPS: Crash kernel should be able to see
+Subject: [PATCH 091/332] FROMLIST: MIPS: Crash kernel should be able to see
  old memories
 
 Kexec-tools use mem=X@Y to pass usable memories to crash kernel, but in
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/arch/mips/kernel/setup.c b/arch/mips/kernel/setup.c
-index fbfe0771317ea..448caaff87f36 100644
+index fbfe0771317e..448caaff87f3 100644
 --- a/arch/mips/kernel/setup.c
 +++ b/arch/mips/kernel/setup.c
 @@ -357,8 +357,10 @@ static int __init early_parse_mem(char *p)

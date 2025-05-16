@@ -1,7 +1,7 @@
-From 6b951acde588e1ebb1df0343f4a23f27fe85785b Mon Sep 17 00:00:00 2001
+From 91081b2c085a0a2e349795977c1460ba8cb5ee74 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 15 Oct 2024 20:32:21 +0800
-Subject: [PATCH 196/333] AOSCOS: Revert "rcu: Fix rcu_barrier() VS post
+Subject: [PATCH 196/332] AOSCOS: Revert "rcu: Fix rcu_barrier() VS post
  CPUHP_TEARDOWN_CPU invocation"
 
 When this change was introduced between v6.10.4 and v6.10.5, the Broadcom
@@ -100,7 +100,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 7 deletions(-)
 
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index 475f31deed141..1310a8c87423e 100644
+index 475f31deed14..1310a8c87423 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -4350,15 +4350,11 @@ void rcutree_migrate_callbacks(int cpu)

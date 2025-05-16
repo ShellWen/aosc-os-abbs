@@ -1,7 +1,7 @@
-From dd018762d8bfc3229ae813b39e7981eea8c6e9d3 Mon Sep 17 00:00:00 2001
+From c1ea70467bf0ebefea25a1fab11850bafe4686ae Mon Sep 17 00:00:00 2001
 From: Li Wencheng <liwencheng@phytium.com.cn>
 Date: Fri, 20 Oct 2023 18:55:20 +0800
-Subject: [PATCH 107/333] PHYTIUM: net: stmmac: Add a barrier to make sure all
+Subject: [PATCH 107/332] PHYTIUM: net: stmmac: Add a barrier to make sure all
  access coherent
 
 Add a memory barrier to sync TX descriptor to avoid data error.
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 6 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/common.h b/drivers/net/ethernet/stmicro/stmmac/common.h
-index e25db747a81a5..b232bf92c44d5 100644
+index e25db747a81a..b232bf92c44d 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/common.h
 +++ b/drivers/net/ethernet/stmicro/stmmac/common.h
 @@ -51,10 +51,10 @@
@@ -38,7 +38,7 @@ index e25db747a81a5..b232bf92c44d5 100644
  
  #undef FRAME_FILTER_DEBUG
 diff --git a/drivers/net/ethernet/stmicro/stmmac/norm_desc.c b/drivers/net/ethernet/stmicro/stmmac/norm_desc.c
-index 68a7cfcb1d8f3..40088a390f7b3 100644
+index 68a7cfcb1d8f..40088a390f7b 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/norm_desc.c
 +++ b/drivers/net/ethernet/stmicro/stmmac/norm_desc.c
 @@ -200,6 +200,10 @@ static void ndesc_prepare_tx_desc(struct dma_desc *p, int is_fs, int len,

@@ -1,7 +1,7 @@
-From 6fc3a1dfb4a8fae0dc58d8726ea820e48e499ab2 Mon Sep 17 00:00:00 2001
+From e4dd30a432e51ef801446d2e114b330a07382f05 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jonas=20Dre=C3=9Fler?= <verdre@v0yd.nl>
 Date: Thu, 25 Mar 2021 11:33:02 +0100
-Subject: [PATCH 161/333] SURFACE: Bluetooth: btusb: Lower passive lescan
+Subject: [PATCH 161/332] SURFACE: Bluetooth: btusb: Lower passive lescan
  interval on Marvell 88W8897
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
@@ -41,7 +41,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 15 insertions(+)
 
 diff --git a/drivers/bluetooth/btusb.c b/drivers/bluetooth/btusb.c
-index ccd0a21da3955..7dec2970af35f 100644
+index ccd0a21da395..7dec2970af35 100644
 --- a/drivers/bluetooth/btusb.c
 +++ b/drivers/bluetooth/btusb.c
 @@ -66,6 +66,7 @@ static struct usb_driver btusb_driver;

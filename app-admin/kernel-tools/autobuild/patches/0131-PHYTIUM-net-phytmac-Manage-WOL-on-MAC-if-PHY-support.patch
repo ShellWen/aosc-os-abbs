@@ -1,7 +1,7 @@
-From 691ef7632b9db040639687c210fb523f8c8d56f8 Mon Sep 17 00:00:00 2001
+From 61fa34d485aab55de424639d7a99efed5250f92b Mon Sep 17 00:00:00 2001
 From: zuoqian <zuoqian2032@phytium.com.cn>
 Date: Wed, 26 Feb 2025 03:50:13 +0000
-Subject: [PATCH 131/333] PHYTIUM: net: phytmac: Manage WOL on MAC if PHY
+Subject: [PATCH 131/332] PHYTIUM: net: phytmac: Manage WOL on MAC if PHY
  supports WOL
 
 Signed-off-by: zuoqian <zuoqian2032@phytium.com.cn>
@@ -13,7 +13,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/net/ethernet/phytium/phytmac_ethtool.c b/drivers/net/ethernet/phytium/phytmac_ethtool.c
-index 306a9934deabd..8bba0af005be8 100644
+index 306a9934deab..8bba0af005be 100644
 --- a/drivers/net/ethernet/phytium/phytmac_ethtool.c
 +++ b/drivers/net/ethernet/phytium/phytmac_ethtool.c
 @@ -116,7 +116,8 @@ static int phytmac_set_wol(struct net_device *ndev, struct ethtool_wolinfo *wol)

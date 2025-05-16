@@ -1,7 +1,7 @@
-From 81e83ed6b26d71c4e5c6eb89398a181e72c624a8 Mon Sep 17 00:00:00 2001
+From 7633cc63f840d8c1e18db6abf770c037e2943de4 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
-Subject: [PATCH 263/333] AOSCOS: Retry to configure USB device if needed
+Subject: [PATCH 263/332] AOSCOS: Retry to configure USB device if needed
 
 [Mingcong Bai: Resolved a minor merge conflict in
 drivers/usb/core/message.c.]
@@ -14,7 +14,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/usb/core/message.c b/drivers/usb/core/message.c
-index d2b2787be4092..8128bd0fc00b7 100644
+index d2b2787be409..8128bd0fc00b 100644
 --- a/drivers/usb/core/message.c
 +++ b/drivers/usb/core/message.c
 @@ -1999,7 +1999,7 @@ int usb_set_configuration(struct usb_device *dev, int configuration)
