@@ -1,7 +1,0 @@
-PKGNAME=pycuda
-PKGSEC=contrib/python
-PKGDEP="boost cuda pytools python-2 python-3"
-BUILDDEP="setuptools setuptools-python2"
-PKGDES="Python wrapper for NVIDIA CUDA"
-
-FAIL_ARCH="!(amd64|arm64)"
