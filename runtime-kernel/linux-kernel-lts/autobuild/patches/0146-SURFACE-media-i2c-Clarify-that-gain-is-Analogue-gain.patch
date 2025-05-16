@@ -1,4 +1,4 @@
-From c26a6dda9d7d7b35682d3187acfb058710825c72 Mon Sep 17 00:00:00 2001
+From 47ac844e7d9d49d6d750e1057f086927833edd44 Mon Sep 17 00:00:00 2001
 From: Daniel Scally <dan.scally@ideasonboard.com>
 Date: Tue, 21 Mar 2023 13:45:26 +0000
 Subject: [PATCH 146/306] SURFACE: media: i2c: Clarify that gain is Analogue
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/media/i2c/ov7251.c b/drivers/media/i2c/ov7251.c
-index 3226888d77e9c..3bfe45b764f7a 100644
+index 3226888d77e9..3bfe45b764f7 100644
 --- a/drivers/media/i2c/ov7251.c
 +++ b/drivers/media/i2c/ov7251.c
 @@ -1053,7 +1053,7 @@ static int ov7251_s_ctrl(struct v4l2_ctrl *ctrl)

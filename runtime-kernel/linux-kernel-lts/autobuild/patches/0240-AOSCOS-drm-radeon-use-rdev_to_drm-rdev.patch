@@ -1,4 +1,4 @@
-From 641c7e2cbaefd625d6334884edc60f106063debb Mon Sep 17 00:00:00 2001
+From 054838453b089f621fb1fafe1488b512ca362167 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 10:31:17 +0800
 Subject: [PATCH 240/306] AOSCOS: drm: radeon: use rdev_to_drm(rdev)
@@ -19,7 +19,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/radeon/radeon_device.c b/drivers/gpu/drm/radeon/radeon_device.c
-index 965867c136fed..c3e045304dd19 100644
+index 965867c136fe..c3e045304dd1 100644
 --- a/drivers/gpu/drm/radeon/radeon_device.c
 +++ b/drivers/gpu/drm/radeon/radeon_device.c
 @@ -1658,7 +1658,7 @@ void radeon_recover_callback(struct work_struct *work)

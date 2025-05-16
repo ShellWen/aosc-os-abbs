@@ -1,4 +1,4 @@
-From a5e03dc7292fdecb1d1ee5b1d95758f7751b7b72 Mon Sep 17 00:00:00 2001
+From 95706967333281dc2172a015479e7a999c00b405 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Thu, 17 Apr 2025 20:38:26 +0800
 Subject: [PATCH 302/306] LOONGSON: LoongArch: Init acpi_gbl_use_global_lock to
@@ -19,7 +19,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+)
 
 diff --git a/arch/loongarch/kernel/setup.c b/arch/loongarch/kernel/setup.c
-index f71b2c77dbd12..61f00ff77f9e5 100644
+index f71b2c77dbd1..61f00ff77f9e 100644
 --- a/arch/loongarch/kernel/setup.c
 +++ b/arch/loongarch/kernel/setup.c
 @@ -357,6 +357,7 @@ void __init platform_init(void)

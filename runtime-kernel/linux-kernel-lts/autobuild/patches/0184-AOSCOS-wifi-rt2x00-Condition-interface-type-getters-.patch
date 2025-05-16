@@ -1,4 +1,4 @@
-From 23f75ab55a92aa3ef533920da33ea2671075674a Mon Sep 17 00:00:00 2001
+From d0aa4cd0f213a2ec2ddca1af93918c5e8a247f3f Mon Sep 17 00:00:00 2001
 From: Jiaxun Yang <jiaxun.yang@flygoat.com>
 Date: Thu, 19 Jan 2023 20:42:56 +0000
 Subject: [PATCH 184/306] AOSCOS: wifi: rt2x00: Condition interface type
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 9 insertions(+), 5 deletions(-)
 
 diff --git a/drivers/net/wireless/ralink/rt2x00/rt2x00.h b/drivers/net/wireless/ralink/rt2x00/rt2x00.h
-index dfb4bb370f01b..9475fbf7a6657 100644
+index dfb4bb370f01..9475fbf7a665 100644
 --- a/drivers/net/wireless/ralink/rt2x00/rt2x00.h
 +++ b/drivers/net/wireless/ralink/rt2x00/rt2x00.h
 @@ -1167,23 +1167,27 @@ static inline bool rt2x00_intf(struct rt2x00_dev *rt2x00dev,

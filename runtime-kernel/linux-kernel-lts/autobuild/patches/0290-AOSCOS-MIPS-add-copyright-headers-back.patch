@@ -1,4 +1,4 @@
-From b56b868e849bfddc8a022083f046ba6406987faa Mon Sep 17 00:00:00 2001
+From d01f90176f1e5f3b1c2366baeaf6c15719fb53d1 Mon Sep 17 00:00:00 2001
 From: Kexy Biscuit <kexybiscuit@aosc.io>
 Date: Tue, 17 Dec 2024 05:45:49 +0800
 Subject: [PATCH 290/306] AOSCOS: MIPS: add copyright headers back
@@ -13,7 +13,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+)
 
 diff --git a/arch/mips/include/uapi/asm/unistd.h b/arch/mips/include/uapi/asm/unistd.h
-index b501ea16ccd40..63bfa241b3aa5 100644
+index b501ea16ccd4..63bfa241b3aa 100644
 --- a/arch/mips/include/uapi/asm/unistd.h
 +++ b/arch/mips/include/uapi/asm/unistd.h
 @@ -6,6 +6,9 @@

@@ -1,4 +1,4 @@
-From 44e40595163c578c679bc24f61c7b2674f35174a Mon Sep 17 00:00:00 2001
+From 3a3c927b7bb7123e443114f1c2389203fc6f75b6 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <baimingcong@uniontech.com>
 Date: Sat, 17 Aug 2024 11:32:11 +0800
 Subject: [PATCH 170/306] AOSCOS: platform: x86: ideapad-laptop: add fixes for
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 26 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/platform/x86/ideapad-laptop.c b/drivers/platform/x86/ideapad-laptop.c
-index c908f52ed717b..d3d81926a503d 100644
+index c908f52ed717..d3d81926a503 100644
 --- a/drivers/platform/x86/ideapad-laptop.c
 +++ b/drivers/platform/x86/ideapad-laptop.c
 @@ -188,6 +188,7 @@ struct ideapad_private {

@@ -1,4 +1,4 @@
-From 6ffab598808b5edb8dccead55fed3effc03a1e2d Mon Sep 17 00:00:00 2001
+From 717244cf0a2fbee03120b27c1d47ac9cb07f5212 Mon Sep 17 00:00:00 2001
 From: Mario Limonciello <mario.limonciello@amd.com>
 Date: Sat, 12 Oct 2024 12:45:18 -0500
 Subject: [PATCH 001/306] UPSTREAM: cpufreq/amd-pstate: Use
@@ -23,7 +23,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 16 deletions(-)
 
 diff --git a/drivers/cpufreq/amd-pstate.c b/drivers/cpufreq/amd-pstate.c
-index 9db5354fdb027..210f79f177d51 100644
+index 9db5354fdb02..210f79f177d5 100644
 --- a/drivers/cpufreq/amd-pstate.c
 +++ b/drivers/cpufreq/amd-pstate.c
 @@ -1482,26 +1482,13 @@ static void amd_pstate_epp_cpu_exit(struct cpufreq_policy *policy)

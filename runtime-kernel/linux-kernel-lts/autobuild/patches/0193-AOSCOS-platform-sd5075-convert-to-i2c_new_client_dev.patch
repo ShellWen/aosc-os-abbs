@@ -1,4 +1,4 @@
-From a0368e842549e681457dede5b25dd19d25529f9b Mon Sep 17 00:00:00 2001
+From de478d056aaff4ebb49fb7ab692a6f60d14c8888 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 4 Dec 2024 15:42:39 +0800
 Subject: [PATCH 193/306] AOSCOS: platform: sd5075: convert to
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/platform/mips/sd5075.c b/drivers/platform/mips/sd5075.c
-index be42c58822901..02bb998210191 100644
+index be42c5882290..02bb99821019 100644
 --- a/drivers/platform/mips/sd5075.c
 +++ b/drivers/platform/mips/sd5075.c
 @@ -93,7 +93,7 @@ static int sd5075_probe(struct platform_device *dev)

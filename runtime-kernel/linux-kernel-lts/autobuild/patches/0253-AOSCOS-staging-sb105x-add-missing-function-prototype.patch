@@ -1,4 +1,4 @@
-From da37a524d2a8ce14d72a2cb293c966950ea9cd86 Mon Sep 17 00:00:00 2001
+From a7d0071b612ed34412b41e301424a9ca8c572ba6 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 13:49:12 +0800
 Subject: [PATCH 253/306] AOSCOS: staging: sb105x: add missing function
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/staging/sb105x/sb_ser_core.h b/drivers/staging/sb105x/sb_ser_core.h
-index c8fb991732997..8835415e1d3df 100644
+index c8fb99173299..8835415e1d3d 100644
 --- a/drivers/staging/sb105x/sb_ser_core.h
 +++ b/drivers/staging/sb105x/sb_ser_core.h
 @@ -196,13 +196,13 @@ struct uart_driver {

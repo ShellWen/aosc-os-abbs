@@ -1,4 +1,4 @@
-From ef8e71db93ae3fe40b4388e47aacc0e3055c134d Mon Sep 17 00:00:00 2001
+From 7e37810f26119ba8bd2fe47e1612921608026c83 Mon Sep 17 00:00:00 2001
 From: Kate Hsuan <hpa@redhat.com>
 Date: Tue, 21 Mar 2023 23:37:16 +0800
 Subject: [PATCH 148/306] SURFACE: platform: x86: int3472: Add MFD cell for
@@ -18,7 +18,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/platform/x86/intel/int3472/tps68470.c b/drivers/platform/x86/intel/int3472/tps68470.c
-index f453c90430429..b8ad6b413e8b4 100644
+index f453c9043042..b8ad6b413e8b 100644
 --- a/drivers/platform/x86/intel/int3472/tps68470.c
 +++ b/drivers/platform/x86/intel/int3472/tps68470.c
 @@ -17,7 +17,7 @@

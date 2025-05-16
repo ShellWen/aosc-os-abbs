@@ -1,4 +1,4 @@
-From 89a51c0f357ac6ad5c48e3831f2f78aacadc885e Mon Sep 17 00:00:00 2001
+From 6b106dc8d91ec520d76b395caaa0199540085876 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 4 Dec 2024 15:49:04 +0800
 Subject: [PATCH 196/306] AOSCOS: platform: emc1412: mark non-prototyped
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/platform/mips/emc1412.c b/drivers/platform/mips/emc1412.c
-index 3fb2dcd600106..bf2fa4b815c8f 100644
+index 3fb2dcd60010..bf2fa4b815c8 100644
 --- a/drivers/platform/mips/emc1412.c
 +++ b/drivers/platform/mips/emc1412.c
 @@ -182,7 +182,7 @@ static void emc1412_shutdown(struct platform_device *dev)

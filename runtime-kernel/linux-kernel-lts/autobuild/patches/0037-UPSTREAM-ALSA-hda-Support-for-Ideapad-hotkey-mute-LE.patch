@@ -1,4 +1,4 @@
-From 4e44ea4581863617237e7baaa322d7ea663c16b0 Mon Sep 17 00:00:00 2001
+From 5f8a216158b3f99bee560dd47c1a13cbef2bf979 Mon Sep 17 00:00:00 2001
 From: Jackie Dong <xy-jackie@139.com>
 Date: Thu, 16 Jan 2025 00:25:15 +0800
 Subject: [PATCH 037/306] UPSTREAM: ALSA: hda: Support for Ideapad hotkey mute
@@ -23,7 +23,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
 
 diff --git a/sound/pci/hda/ideapad_hotkey_led_helper.c b/sound/pci/hda/ideapad_hotkey_led_helper.c
 new file mode 100644
-index 0000000000000..c10d97964d49b
+index 000000000000..c10d97964d49
 --- /dev/null
 +++ b/sound/pci/hda/ideapad_hotkey_led_helper.c
 @@ -0,0 +1,36 @@
@@ -64,7 +64,7 @@ index 0000000000000..c10d97964d49b
 +
 +#endif /* CONFIG_IDEAPAD_LAPTOP */
 diff --git a/sound/pci/hda/patch_conexant.c b/sound/pci/hda/patch_conexant.c
-index 84ab357b840d6..34874039ad453 100644
+index 84ab357b840d..34874039ad45 100644
 --- a/sound/pci/hda/patch_conexant.c
 +++ b/sound/pci/hda/patch_conexant.c
 @@ -291,6 +291,7 @@ enum {
@@ -116,7 +116,7 @@ index 84ab357b840d6..34874039ad453 100644
  	{ .id = CXT_PINCFG_LEMOTE_A1205, .name = "lemote-a1205" },
  	{ .id = CXT_FIXUP_OLPC_XO, .name = "olpc-xo" },
 diff --git a/sound/pci/hda/patch_realtek.c b/sound/pci/hda/patch_realtek.c
-index db72c5fce9d18..733eba5df43ec 100644
+index db72c5fce9d1..733eba5df43e 100644
 --- a/sound/pci/hda/patch_realtek.c
 +++ b/sound/pci/hda/patch_realtek.c
 @@ -7046,6 +7046,15 @@ static void alc_fixup_thinkpad_acpi(struct hda_codec *codec,

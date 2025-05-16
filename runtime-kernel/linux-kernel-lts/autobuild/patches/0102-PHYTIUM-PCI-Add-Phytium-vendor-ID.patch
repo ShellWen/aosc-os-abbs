@@ -1,4 +1,4 @@
-From 5d87ba34162cae39438586ac994f1d2cd7b38dc4 Mon Sep 17 00:00:00 2001
+From cbcb7f7f0af45556fb55976578e0bf2981ce5f25 Mon Sep 17 00:00:00 2001
 From: Chen Baozi <chenbaozi@phytium.com.cn>
 Date: Fri, 14 Jul 2023 08:33:59 +0800
 Subject: [PATCH 102/306] PHYTIUM: PCI: Add Phytium vendor ID
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/include/linux/pci_ids.h b/include/linux/pci_ids.h
-index c395b3c5c05cf..8284f7744d1bc 100644
+index c395b3c5c05c..8284f7744d1b 100644
 --- a/include/linux/pci_ids.h
 +++ b/include/linux/pci_ids.h
 @@ -3247,4 +3247,6 @@

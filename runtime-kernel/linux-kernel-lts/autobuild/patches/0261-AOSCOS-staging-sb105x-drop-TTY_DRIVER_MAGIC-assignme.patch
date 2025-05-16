@@ -1,4 +1,4 @@
-From fac1a2eb3212254db0a3f47467317fe73815e965 Mon Sep 17 00:00:00 2001
+From 7a1395174fc1a14ef5d104816e585448973a5eb9 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 16:19:05 +0800
 Subject: [PATCH 261/306] AOSCOS: staging: sb105x: drop TTY_DRIVER_MAGIC
@@ -16,7 +16,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 deletion(-)
 
 diff --git a/drivers/staging/sb105x/sb_pci_mp.c b/drivers/staging/sb105x/sb_pci_mp.c
-index 32f60de269ccb..841e9b15486b0 100644
+index 32f60de269cc..841e9b15486b 100644
 --- a/drivers/staging/sb105x/sb_pci_mp.c
 +++ b/drivers/staging/sb105x/sb_pci_mp.c
 @@ -1736,7 +1736,6 @@ static int mp_register_driver(struct uart_driver *drv)

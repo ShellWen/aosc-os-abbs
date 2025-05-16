@@ -1,4 +1,4 @@
-From 848cf3fda9f0730450e7f6d9aac2a1d3ecce08ab Mon Sep 17 00:00:00 2001
+From 8324010a1684eab6b4f961eab3c0a2a678666ec9 Mon Sep 17 00:00:00 2001
 From: Kexy Biscuit <kexybiscuit@aosc.io>
 Date: Mon, 23 Dec 2024 19:06:09 +0800
 Subject: [PATCH 291/306] AOSCOS: mips, crash: wrap more crash dumping code
@@ -26,7 +26,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/arch/mips/kernel/setup.c b/arch/mips/kernel/setup.c
-index 553ca3b363a8b..61242a9810e4f 100644
+index 553ca3b363a8..61242a9810e4 100644
 --- a/arch/mips/kernel/setup.c
 +++ b/arch/mips/kernel/setup.c
 @@ -622,7 +622,9 @@ static void __init bootcmdline_init(void)

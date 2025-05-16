@@ -1,4 +1,4 @@
-From eb17d9c5e7d9990b206906af192c3bba4d1d641e Mon Sep 17 00:00:00 2001
+From e942c36094a22f096c26db6e9e33b5573036054b Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 24 Sep 2020 18:07:58 +0800
 Subject: [PATCH 094/306] BACKPORT: FROMLIST: MIPS: Reserve extra memory for
@@ -20,7 +20,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 62 insertions(+)
 
 diff --git a/arch/mips/kernel/setup.c b/arch/mips/kernel/setup.c
-index 50264d9ca2697..553ca3b363a8b 100644
+index 50264d9ca269..553ca3b363a8 100644
 --- a/arch/mips/kernel/setup.c
 +++ b/arch/mips/kernel/setup.c
 @@ -54,6 +54,10 @@ struct cpuinfo_mips cpu_data[NR_CPUS] __read_mostly;

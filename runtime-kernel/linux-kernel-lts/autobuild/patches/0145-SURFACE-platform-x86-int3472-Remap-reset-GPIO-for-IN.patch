@@ -1,4 +1,4 @@
-From ac10ff99146f716cebc2297d6e4bd20aaa63d971 Mon Sep 17 00:00:00 2001
+From 299d681af2c4a3e6b540a8455eb2b44f52d6f93c Mon Sep 17 00:00:00 2001
 From: Daniel Scally <dan.scally@ideasonboard.com>
 Date: Thu, 2 Mar 2023 12:59:39 +0000
 Subject: [PATCH 145/306] SURFACE: platform/x86: int3472: Remap reset GPIO for
@@ -25,7 +25,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 15 insertions(+)
 
 diff --git a/drivers/platform/x86/intel/int3472/discrete.c b/drivers/platform/x86/intel/int3472/discrete.c
-index 9e69ac9cfb92c..d6003198aa12b 100644
+index 9e69ac9cfb92..d6003198aa12 100644
 --- a/drivers/platform/x86/intel/int3472/discrete.c
 +++ b/drivers/platform/x86/intel/int3472/discrete.c
 @@ -81,12 +81,27 @@ static int skl_int3472_map_gpio_to_sensor(struct int3472_discrete_device *int347

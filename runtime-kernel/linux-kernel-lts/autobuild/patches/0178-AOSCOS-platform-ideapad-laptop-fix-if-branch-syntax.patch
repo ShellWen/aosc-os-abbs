@@ -1,4 +1,4 @@
-From 8d2215a16b2d9920520abb0032e0671e10cc0ace Mon Sep 17 00:00:00 2001
+From 30be275f303959f89caecb6a4ee7b9fbeccf3b47 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Thu, 26 Dec 2024 10:13:42 +0800
 Subject: [PATCH 178/306] AOSCOS: platform: ideapad-laptop: fix if branch
@@ -24,7 +24,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/platform/x86/ideapad-laptop.c b/drivers/platform/x86/ideapad-laptop.c
-index d3d81926a503d..6da04fa763030 100644
+index d3d81926a503..6da04fa76303 100644
 --- a/drivers/platform/x86/ideapad-laptop.c
 +++ b/drivers/platform/x86/ideapad-laptop.c
 @@ -1852,9 +1852,10 @@ static void ideapad_acpi_notify(acpi_handle handle, u32 event, void *data)

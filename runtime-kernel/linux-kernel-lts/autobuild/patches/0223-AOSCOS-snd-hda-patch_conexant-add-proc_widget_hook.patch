@@ -1,4 +1,4 @@
-From d75ea16f8f7fa5f754a2585dca79c5d1f79c73a5 Mon Sep 17 00:00:00 2001
+From 1e47e6129b6b5702ab2e00b1b5188dc37514a396 Mon Sep 17 00:00:00 2001
 From: chenj <chenj@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 223/306] AOSCOS: snd/hda/patch_conexant: add proc_widget_hook
@@ -20,7 +20,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 74 insertions(+)
 
 diff --git a/sound/pci/hda/patch_conexant.c b/sound/pci/hda/patch_conexant.c
-index 34874039ad453..0df06250f5d42 100644
+index 34874039ad45..0df06250f5d4 100644
 --- a/sound/pci/hda/patch_conexant.c
 +++ b/sound/pci/hda/patch_conexant.c
 @@ -1178,6 +1178,78 @@ static void add_cx5051_fake_mutes(struct hda_codec *codec)

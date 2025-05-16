@@ -1,4 +1,4 @@
-From fda7a84daa31fba01eb5e414e74b10323b3239bb Mon Sep 17 00:00:00 2001
+From 601060870011d345f7816b7dc4bb439a018cce6d Mon Sep 17 00:00:00 2001
 From: Kexy Biscuit <kexybiscuit@aosc.io>
 Date: Wed, 19 Feb 2025 02:21:41 +0800
 Subject: [PATCH 183/306] AOSCOS: ata: libata: change HORKAGE to QUIRK
@@ -13,7 +13,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/ata/libata-core.c b/drivers/ata/libata-core.c
-index d47f5bf13b93e..ef0b334e262e6 100644
+index d47f5bf13b93..ef0b334e262e 100644
 --- a/drivers/ata/libata-core.c
 +++ b/drivers/ata/libata-core.c
 @@ -3066,7 +3066,7 @@ int ata_dev_configure(struct ata_device *dev)

@@ -1,4 +1,4 @@
-From 168473964c1cee59ec7589b001f417989487e109 Mon Sep 17 00:00:00 2001
+From 4c8ff1a56705aee1d9ff6bd2b41f42971e8aa4b4 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 3 Dec 2024 16:52:14 +0800
 Subject: [PATCH 187/306] AOSCOS: MIPS: loongson64: fix constant timer build on
@@ -20,7 +20,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 9 insertions(+), 7 deletions(-)
 
 diff --git a/arch/mips/loongson64/constant_timer.c b/arch/mips/loongson64/constant_timer.c
-index b8bdbb2c47b51..975fb93c4efa2 100644
+index b8bdbb2c47b5..975fb93c4efa 100644
 --- a/arch/mips/loongson64/constant_timer.c
 +++ b/arch/mips/loongson64/constant_timer.c
 @@ -42,12 +42,6 @@ static irqreturn_t constant_timer_interrupt(int irq, void *data)

@@ -1,4 +1,4 @@
-From 844e3aff30d2c3230f9fe120830709851937300f Mon Sep 17 00:00:00 2001
+From 8421f5627a69508733f77ae018c1b7002add1d8a Mon Sep 17 00:00:00 2001
 From: Hans de Goede <hdegoede@redhat.com>
 Date: Sun, 10 Oct 2021 20:56:57 +0200
 Subject: [PATCH 142/306] SURFACE: ACPI: delay enumeration of devices with a
@@ -61,7 +61,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+)
 
 diff --git a/drivers/acpi/scan.c b/drivers/acpi/scan.c
-index 7ecc401fb97f9..e35185de1902a 100644
+index 7ecc401fb97f..e35185de1902 100644
 --- a/drivers/acpi/scan.c
 +++ b/drivers/acpi/scan.c
 @@ -2205,6 +2205,9 @@ static acpi_status acpi_bus_check_add_2(acpi_handle handle, u32 lvl_not_used,

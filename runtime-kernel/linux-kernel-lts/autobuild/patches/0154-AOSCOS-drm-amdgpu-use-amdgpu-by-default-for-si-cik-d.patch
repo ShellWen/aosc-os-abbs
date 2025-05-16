@@ -1,4 +1,4 @@
-From b6c94aa26b0f5ee3206a581e3569af64b4582ebe Mon Sep 17 00:00:00 2001
+From fc46c5822e4745f7272040f21b2152a362bdeac2 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 22 Sep 2024 00:57:24 +0800
 Subject: [PATCH 154/306] AOSCOS: drm: amdgpu: use amdgpu by default for si/cik
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 4 insertions(+), 14 deletions(-)
 
 diff --git a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
-index a0d8947258db7..4542daff1f521 100644
+index a0d8947258db..4542daff1f52 100644
 --- a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 +++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 @@ -620,13 +620,8 @@ module_param_named(timeout_period, amdgpu_watchdog_timer.period, uint, 0644);
@@ -53,7 +53,7 @@ index a0d8947258db7..4542daff1f521 100644
  module_param_named(cik_support, amdgpu_cik_support, int, 0444);
  #endif
 diff --git a/drivers/gpu/drm/radeon/radeon_drv.c b/drivers/gpu/drm/radeon/radeon_drv.c
-index e5a6f3e7c75b6..6d87122cc9f6e 100644
+index e5a6f3e7c75b..6d87122cc9f6 100644
 --- a/drivers/gpu/drm/radeon/radeon_drv.c
 +++ b/drivers/gpu/drm/radeon/radeon_drv.c
 @@ -239,12 +239,12 @@ module_param_named(uvd, radeon_uvd, int, 0444);

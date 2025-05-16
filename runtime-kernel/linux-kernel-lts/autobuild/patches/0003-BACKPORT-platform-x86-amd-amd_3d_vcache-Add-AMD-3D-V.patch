@@ -1,4 +1,4 @@
-From 2b20b17ab16107662f8ebdb7712b29a62a7d02b6 Mon Sep 17 00:00:00 2001
+From 4a460c9ede250549fc23d86f4aa6d77152bd4f54 Mon Sep 17 00:00:00 2001
 From: Basavaraj Natikar <Basavaraj.Natikar@amd.com>
 Date: Tue, 12 Nov 2024 22:33:06 +0530
 Subject: [PATCH 003/306] BACKPORT: platform/x86/amd: amd_3d_vcache: Add AMD 3D
@@ -41,7 +41,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  create mode 100644 drivers/platform/x86/amd/x3d_vcache.c
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index de04c7ba8571b..795042cf84119 100644
+index de04c7ba8571..795042cf8411 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -965,6 +965,13 @@ Q:	https://patchwork.kernel.org/project/linux-rdma/list/
@@ -59,7 +59,7 @@ index de04c7ba8571b..795042cf84119 100644
  M:	Yazen Ghannam <Yazen.Ghannam@amd.com>
  L:	linux-edac@vger.kernel.org
 diff --git a/drivers/platform/x86/amd/Kconfig b/drivers/platform/x86/amd/Kconfig
-index f88682d36447c..d73f691020d0f 100644
+index f88682d36447..d73f691020d0 100644
 --- a/drivers/platform/x86/amd/Kconfig
 +++ b/drivers/platform/x86/amd/Kconfig
 @@ -6,6 +6,18 @@
@@ -82,7 +82,7 @@ index f88682d36447c..d73f691020d0f 100644
  	tristate "AMD HSMP Driver"
  	depends on AMD_NB && X86_64 && ACPI
 diff --git a/drivers/platform/x86/amd/Makefile b/drivers/platform/x86/amd/Makefile
-index dcec0a46f8af1..86d73f3bd1760 100644
+index dcec0a46f8af..86d73f3bd176 100644
 --- a/drivers/platform/x86/amd/Makefile
 +++ b/drivers/platform/x86/amd/Makefile
 @@ -4,6 +4,8 @@
@@ -96,7 +96,7 @@ index dcec0a46f8af1..86d73f3bd1760 100644
  obj-$(CONFIG_AMD_HSMP)		+= amd_hsmp.o
 diff --git a/drivers/platform/x86/amd/x3d_vcache.c b/drivers/platform/x86/amd/x3d_vcache.c
 new file mode 100644
-index 0000000000000..0f6d3c54d8795
+index 000000000000..0f6d3c54d879
 --- /dev/null
 +++ b/drivers/platform/x86/amd/x3d_vcache.c
 @@ -0,0 +1,176 @@

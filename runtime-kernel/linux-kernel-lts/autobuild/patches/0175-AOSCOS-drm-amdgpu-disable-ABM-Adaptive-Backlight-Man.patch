@@ -1,4 +1,4 @@
-From de95ca5745daa3bca57797eeb003b7cc4c35ca40 Mon Sep 17 00:00:00 2001
+From a72c4be573135885a32de603dc544464ba41803d Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Thu, 24 Oct 2024 20:53:23 +0800
 Subject: [PATCH 175/306] AOSCOS: drm: amdgpu: disable ABM (Adaptive Backlight
@@ -20,7 +20,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
-index 4542daff1f521..951219e93d51c 100644
+index 4542daff1f52..951219e93d51 100644
 --- a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 +++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 @@ -887,9 +887,9 @@ module_param_named(visualconfirm, amdgpu_dc_visual_confirm, uint, 0444);

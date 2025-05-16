@@ -1,4 +1,4 @@
-From 178bf07f6b09a4a75a51793a28fb4ab4e9eb7663 Mon Sep 17 00:00:00 2001
+From fad9f00677334cfa74c5027e0ada0c168c590301 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 248/306] AOSCOS: sm750fb: Disable hw_cursor to avoid screen
@@ -12,7 +12,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/staging/sm750fb/sm750.c b/drivers/staging/sm750fb/sm750.c
-index 9bdf3248556bd..f6a2b00f7215b 100644
+index 9bdf3248556b..f6a2b00f7215 100644
 --- a/drivers/staging/sm750fb/sm750.c
 +++ b/drivers/staging/sm750fb/sm750.c
 @@ -30,7 +30,7 @@

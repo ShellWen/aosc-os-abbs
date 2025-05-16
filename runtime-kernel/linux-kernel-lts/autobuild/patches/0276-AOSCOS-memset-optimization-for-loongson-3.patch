@@ -1,4 +1,4 @@
-From 6cbf8b62b53ac7c37da6c392526a3e6f3e95ed83 Mon Sep 17 00:00:00 2001
+From 6683e3dccc84e236b4c6a6e1ccfd779fc00822dd Mon Sep 17 00:00:00 2001
 From: chenj <chenj@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 276/306] AOSCOS: memset optimization for loongson-3
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  create mode 100644 arch/mips/loongson64/loongson3-memset.S
 
 diff --git a/arch/mips/loongson64/Makefile b/arch/mips/loongson64/Makefile
-index 16b0c555b52ae..f6a1fd6cb736e 100644
+index 16b0c555b52a..f6a1fd6cb736 100644
 --- a/arch/mips/loongson64/Makefile
 +++ b/arch/mips/loongson64/Makefile
 @@ -5,6 +5,7 @@
@@ -30,7 +30,7 @@ index 16b0c555b52ae..f6a1fd6cb736e 100644
  obj-$(CONFIG_NUMA)	+= numa.o
 diff --git a/arch/mips/loongson64/loongson3-memset.S b/arch/mips/loongson64/loongson3-memset.S
 new file mode 100644
-index 0000000000000..227b2d67082e3
+index 000000000000..227b2d67082e
 --- /dev/null
 +++ b/arch/mips/loongson64/loongson3-memset.S
 @@ -0,0 +1,206 @@

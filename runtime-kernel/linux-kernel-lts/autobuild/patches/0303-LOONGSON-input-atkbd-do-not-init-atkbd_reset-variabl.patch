@@ -1,4 +1,4 @@
-From 60f256deaa908de0c8d29e822266b6dbefb89ffd Mon Sep 17 00:00:00 2001
+From 5dc9e0a17c75ad922178fd737c602423f97441fa Mon Sep 17 00:00:00 2001
 From: Qunqin Zhao <zhaoqunqin@loongson.cn>
 Date: Tue, 1 Apr 2025 17:41:54 +0800
 Subject: [PATCH 303/306] LOONGSON: input: atkbd: do not init atkbd_reset
@@ -17,7 +17,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/input/keyboard/atkbd.c b/drivers/input/keyboard/atkbd.c
-index 174602f0b4d25..fbca34028973e 100644
+index 174602f0b4d2..fbca34028973 100644
 --- a/drivers/input/keyboard/atkbd.c
 +++ b/drivers/input/keyboard/atkbd.c
 @@ -37,7 +37,7 @@ static int atkbd_set = 2;

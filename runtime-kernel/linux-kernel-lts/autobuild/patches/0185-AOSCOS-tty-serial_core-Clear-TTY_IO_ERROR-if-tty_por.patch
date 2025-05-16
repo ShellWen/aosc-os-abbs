@@ -1,4 +1,4 @@
-From e6fb70d4a14dea1164ccba1bbab6f479163c5d4e Mon Sep 17 00:00:00 2001
+From c9baeb716055ad2c6defe09a94c7a3a082bf02b2 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 185/306] AOSCOS: tty: serial_core: Clear TTY_IO_ERROR if
@@ -29,7 +29,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/drivers/tty/serial/serial_core.c b/drivers/tty/serial/serial_core.c
-index d94d73e45fb6d..54325a140f34d 100644
+index d94d73e45fb6..54325a140f34 100644
 --- a/drivers/tty/serial/serial_core.c
 +++ b/drivers/tty/serial/serial_core.c
 @@ -1988,6 +1988,8 @@ static int uart_open(struct tty_struct *tty, struct file *filp)

@@ -1,4 +1,4 @@
-From 66b09ad2e065a73b55c6248c4ac9f8cd3f2b3884 Mon Sep 17 00:00:00 2001
+From aace9b083e7b08627c591bd1877a88217310d463 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 12 Jan 2025 15:43:08 +0800
 Subject: [PATCH 179/306] AOSCOS: kvm: disable enable_virt_at_load by default
@@ -34,7 +34,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/virt/kvm/kvm_main.c b/virt/kvm/kvm_main.c
-index 279e03029ce14..9ec085517727f 100644
+index 279e03029ce1..9ec085517727 100644
 --- a/virt/kvm/kvm_main.c
 +++ b/virt/kvm/kvm_main.c
 @@ -5563,7 +5563,7 @@ static struct miscdevice kvm_dev = {

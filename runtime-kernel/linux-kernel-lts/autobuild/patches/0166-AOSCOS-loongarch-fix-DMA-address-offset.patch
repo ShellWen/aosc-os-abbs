@@ -1,4 +1,4 @@
-From 3bda93034fed0d04270cc857676d62644dcbe4c9 Mon Sep 17 00:00:00 2001
+From bc9462332eb52b11618bbb33055ab0de5b23706a Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Tue, 13 Aug 2024 16:05:28 +0800
 Subject: [PATCH 166/306] AOSCOS: loongarch: fix DMA address offset
@@ -44,7 +44,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 27 insertions(+)
 
 diff --git a/arch/loongarch/kernel/legacy_boot.c b/arch/loongarch/kernel/legacy_boot.c
-index 3ec69ffd8b942..2888e2b9fb456 100644
+index 3ec69ffd8b94..2888e2b9fb45 100644
 --- a/arch/loongarch/kernel/legacy_boot.c
 +++ b/arch/loongarch/kernel/legacy_boot.c
 @@ -46,6 +46,19 @@ enum bpi_mem_type {

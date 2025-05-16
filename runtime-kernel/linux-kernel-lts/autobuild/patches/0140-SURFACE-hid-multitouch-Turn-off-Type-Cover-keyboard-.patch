@@ -1,4 +1,4 @@
-From 6da6fa61f9daf540499d232b85a9186bf5358e80 Mon Sep 17 00:00:00 2001
+From 1093dd30c521c27a45a27e738d28417132063505 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jonas=20Dre=C3=9Fler?= <verdre@v0yd.nl>
 Date: Thu, 5 Nov 2020 13:09:45 +0100
 Subject: [PATCH 140/306] SURFACE: hid/multitouch: Turn off Type Cover keyboard
@@ -41,7 +41,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 98 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/hid/hid-multitouch.c b/drivers/hid/hid-multitouch.c
-index 93b5c648ef82c..72d3020b237e6 100644
+index 93b5c648ef82..72d3020b237e 100644
 --- a/drivers/hid/hid-multitouch.c
 +++ b/drivers/hid/hid-multitouch.c
 @@ -34,7 +34,10 @@

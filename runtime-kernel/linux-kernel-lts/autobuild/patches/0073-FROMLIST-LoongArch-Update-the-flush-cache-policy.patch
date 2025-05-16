@@ -1,4 +1,4 @@
-From 073d8ba59921f6247d5df61c6fb9b5b5cb5111d5 Mon Sep 17 00:00:00 2001
+From 7debf77de601ca7be5f7703ba19f33895cc68df3 Mon Sep 17 00:00:00 2001
 From: Li Jun <lijun01@kylinos.cn>
 Date: Tue, 7 May 2024 15:43:57 +0800
 Subject: [PATCH 073/306] FROMLIST: LoongArch: Update the flush cache policy
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 22 insertions(+), 1 deletion(-)
 
 diff --git a/arch/loongarch/mm/cache.c b/arch/loongarch/mm/cache.c
-index 6be04d36ca076..89eeb9a97dd5d 100644
+index 6be04d36ca07..89eeb9a97dd5 100644
 --- a/arch/loongarch/mm/cache.c
 +++ b/arch/loongarch/mm/cache.c
 @@ -63,6 +63,27 @@ static void flush_cache_leaf(unsigned int leaf)

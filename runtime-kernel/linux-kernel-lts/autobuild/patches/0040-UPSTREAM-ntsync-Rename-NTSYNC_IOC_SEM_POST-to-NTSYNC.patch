@@ -1,4 +1,4 @@
-From 04b0e53379f4c3b63555476cdb248bc717cd44dc Mon Sep 17 00:00:00 2001
+From 3145d5668eee779b2e05c4d8bebbf6e631aefd6c Mon Sep 17 00:00:00 2001
 From: Elizabeth Figura <zfigura@codeweavers.com>
 Date: Fri, 13 Dec 2024 13:34:43 -0600
 Subject: [PATCH 040/306] UPSTREAM: ntsync: Rename NTSYNC_IOC_SEM_POST to
@@ -19,7 +19,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 6 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/misc/ntsync.c b/drivers/misc/ntsync.c
-index 2e7f698268c1f..cb3a3bd97ba0c 100644
+index 2e7f698268c1..cb3a3bd97ba0 100644
 --- a/drivers/misc/ntsync.c
 +++ b/drivers/misc/ntsync.c
 @@ -57,7 +57,7 @@ struct ntsync_device {
@@ -61,7 +61,7 @@ index 2e7f698268c1f..cb3a3bd97ba0c 100644
  		return -ENOIOCTLCMD;
  	}
 diff --git a/include/uapi/linux/ntsync.h b/include/uapi/linux/ntsync.h
-index 27d8cb3dd5b7c..9af9d8125553d 100644
+index 27d8cb3dd5b7..9af9d8125553 100644
 --- a/include/uapi/linux/ntsync.h
 +++ b/include/uapi/linux/ntsync.h
 @@ -17,6 +17,6 @@ struct ntsync_sem_args {

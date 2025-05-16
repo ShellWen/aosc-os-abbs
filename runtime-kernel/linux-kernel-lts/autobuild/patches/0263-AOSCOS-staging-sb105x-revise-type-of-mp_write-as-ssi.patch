@@ -1,4 +1,4 @@
-From ca8cc7c56cb5d2f0ed3900f276d6c5d3b07fa66c Mon Sep 17 00:00:00 2001
+From 5416512b83ad72a3b0cbfd6e65ffd657f85d1fe5 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 17:16:44 +0800
 Subject: [PATCH 263/306] AOSCOS: staging: sb105x: revise type of mp_write() as
@@ -19,7 +19,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/staging/sb105x/sb_pci_mp.c b/drivers/staging/sb105x/sb_pci_mp.c
-index 0d7e216fad94a..f61451fabdcd0 100644
+index 0d7e216fad94..f61451fabdcd 100644
 --- a/drivers/staging/sb105x/sb_pci_mp.c
 +++ b/drivers/staging/sb105x/sb_pci_mp.c
 @@ -39,7 +39,7 @@ static inline int __mp_put_char(struct sb_uart_port *port, struct circ_buf *circ

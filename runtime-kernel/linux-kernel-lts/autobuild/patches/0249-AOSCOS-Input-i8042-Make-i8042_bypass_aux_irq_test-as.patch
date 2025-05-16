@@ -1,4 +1,4 @@
-From b3f5bb31ddb369fab9ff777a6af876d66268a6c9 Mon Sep 17 00:00:00 2001
+From 26b7e4b0b978a52d59941358b868136f48e5e95e Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 249/306] AOSCOS: Input: i8042 - Make i8042_bypass_aux_irq_test
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/input/serio/i8042.c b/drivers/input/serio/i8042.c
-index 199e9f83a165c..39175a94a7f34 100644
+index 199e9f83a165..39175a94a7f3 100644
 --- a/drivers/input/serio/i8042.c
 +++ b/drivers/input/serio/i8042.c
 @@ -131,7 +131,9 @@ MODULE_PARM_DESC(unmask_kbd_data, "Unconditional enable (may reveal sensitive da

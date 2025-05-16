@@ -1,4 +1,4 @@
-From 30ac886177603bec8636bbd3dfa6c239f2858ac1 Mon Sep 17 00:00:00 2001
+From 8c1d205eede85bd9fc33579a2c5e9f53451395bf Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jonas=20Dre=C3=9Fler?= <verdre@v0yd.nl>
 Date: Thu, 25 Mar 2021 11:33:02 +0100
 Subject: [PATCH 136/306] SURFACE: Bluetooth: btusb: Lower passive lescan
@@ -41,7 +41,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 15 insertions(+)
 
 diff --git a/drivers/bluetooth/btusb.c b/drivers/bluetooth/btusb.c
-index 7e1f03231b4c9..a7743326f5ea9 100644
+index 7e1f03231b4c..a7743326f5ea 100644
 --- a/drivers/bluetooth/btusb.c
 +++ b/drivers/bluetooth/btusb.c
 @@ -65,6 +65,7 @@ static struct usb_driver btusb_driver;

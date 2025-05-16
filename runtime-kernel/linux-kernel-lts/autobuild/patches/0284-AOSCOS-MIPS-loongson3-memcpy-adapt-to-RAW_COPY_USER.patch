@@ -1,4 +1,4 @@
-From 9c1b85bdb5657cf477c9a7ffce5cf93d0c8fb0bf Mon Sep 17 00:00:00 2001
+From 5f913f04f25f2db92f026c37adafbc41457d9c45 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Thu, 12 Dec 2024 14:10:57 +0800
 Subject: [PATCH 284/306] AOSCOS: MIPS: loongson3-memcpy: adapt to
@@ -20,7 +20,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/arch/mips/loongson64/loongson3-memcpy.S b/arch/mips/loongson64/loongson3-memcpy.S
-index 2021e75d5dd2e..c5dd2e2866c3c 100644
+index 2021e75d5dd2..c5dd2e2866c3 100644
 --- a/arch/mips/loongson64/loongson3-memcpy.S
 +++ b/arch/mips/loongson64/loongson3-memcpy.S
 @@ -119,8 +119,10 @@ LEAF(memcpy)				/* a0=dst a1=src a2=len */

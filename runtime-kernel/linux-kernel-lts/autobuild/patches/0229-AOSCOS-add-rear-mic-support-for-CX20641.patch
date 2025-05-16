@@ -1,4 +1,4 @@
-From 6314c92e53451ac600ee87a4d2d6cb4eaacdfcc3 Mon Sep 17 00:00:00 2001
+From 27cea0661297eae70f398674ff640ba1b2298a7e Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 229/306] AOSCOS: add rear mic support for CX20641
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/sound/pci/hda/patch_conexant.c b/sound/pci/hda/patch_conexant.c
-index a0e183107088c..bc57b3092e598 100644
+index a0e183107088..bc57b3092e59 100644
 --- a/sound/pci/hda/patch_conexant.c
 +++ b/sound/pci/hda/patch_conexant.c
 @@ -1334,8 +1334,9 @@ static int patch_conexant_auto(struct hda_codec *codec)

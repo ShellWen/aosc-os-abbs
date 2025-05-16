@@ -1,4 +1,4 @@
-From 913b6ea0ebb336eee20f5256f68505f52072924a Mon Sep 17 00:00:00 2001
+From 91538d715c4010839a333673359863c1d90f105e Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Fri, 31 Jan 2025 18:06:30 +0800
 Subject: [PATCH 083/306] FROMLIST: USB: core: Enable root_hub's remote wakeup
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/usb/core/hub.c b/drivers/usb/core/hub.c
-index 145787c424e0c..afa89f7aada60 100644
+index 145787c424e0..afa89f7aada6 100644
 --- a/drivers/usb/core/hub.c
 +++ b/drivers/usb/core/hub.c
 @@ -3490,6 +3490,7 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)

@@ -1,4 +1,4 @@
-From d643935a2947eb9cad3789a90a4d6cdd875438c4 Mon Sep 17 00:00:00 2001
+From 0e9ec6ecf36c99ea4a47f32dd5629c60877fa4d7 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 17:22:27 +0800
 Subject: [PATCH 265/306] AOSCOS: staging: sb105x: revise type of
@@ -19,7 +19,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/staging/sb105x/sb_pci_mp.c b/drivers/staging/sb105x/sb_pci_mp.c
-index 593835f0ad11c..8712e74230648 100644
+index 593835f0ad11..8712e7423064 100644
 --- a/drivers/staging/sb105x/sb_pci_mp.c
 +++ b/drivers/staging/sb105x/sb_pci_mp.c
 @@ -41,7 +41,7 @@ static int mp_put_char(struct tty_struct *tty, unsigned char ch);

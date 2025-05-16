@@ -1,4 +1,4 @@
-From 85939db3d18bafcfd32d72062dfd18d85507fed1 Mon Sep 17 00:00:00 2001
+From ae5b76ee1785e5a84a3e5fa4ea28500fe2e1a498 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 15 Oct 2024 20:32:21 +0800
 Subject: [PATCH 171/306] AOSCOS: Revert "rcu: Fix rcu_barrier() VS post
@@ -100,7 +100,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 3 insertions(+), 7 deletions(-)
 
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index 8e52c1dd06284..c3ceca7b86ad2 100644
+index 8e52c1dd0628..c3ceca7b86ad 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -5236,15 +5236,11 @@ void rcutree_migrate_callbacks(int cpu)

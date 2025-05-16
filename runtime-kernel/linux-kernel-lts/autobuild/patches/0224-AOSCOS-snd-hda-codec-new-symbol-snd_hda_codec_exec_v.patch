@@ -1,4 +1,4 @@
-From 8ef30f7d769f927917e0364b5fa561080c3a90f0 Mon Sep 17 00:00:00 2001
+From ea6caf76d80ae03148641b17447ecbc9550ee6bb Mon Sep 17 00:00:00 2001
 From: chenj <chenj@lemote.com>
 Date: Thu, 1 Dec 2016 09:51:35 +0800
 Subject: [PATCH 224/306] AOSCOS: snd-hda-codec: new symbol
@@ -18,7 +18,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 20 insertions(+)
 
 diff --git a/include/sound/hda_codec.h b/include/sound/hda_codec.h
-index 575e55aa08ca9..e902583ad41c4 100644
+index 575e55aa08ca..e902583ad41c 100644
 --- a/include/sound/hda_codec.h
 +++ b/include/sound/hda_codec.h
 @@ -368,6 +368,8 @@ struct hda_verb {
@@ -31,7 +31,7 @@ index 575e55aa08ca9..e902583ad41c4 100644
  			    const struct hda_verb *seq);
  
 diff --git a/sound/pci/hda/hda_codec.c b/sound/pci/hda/hda_codec.c
-index 46a2204049993..51598637e9a21 100644
+index 46a220404999..51598637e9a2 100644
 --- a/sound/pci/hda/hda_codec.c
 +++ b/sound/pci/hda/hda_codec.c
 @@ -68,6 +68,24 @@ static int codec_exec_verb(struct hdac_device *dev, unsigned int cmd,

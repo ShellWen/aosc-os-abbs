@@ -1,4 +1,4 @@
-From fde9c5e7a6665a17bf52e5d238ad7936f63e0954 Mon Sep 17 00:00:00 2001
+From 19044a32a8ccf348567044ab9b0f0d5941495b64 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 10:36:24 +0800
 Subject: [PATCH 241/306] AOSCOS: drm: ttm: introduce struct delayed_work
@@ -26,7 +26,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 7 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/gpu/drm/ttm/ttm_bo.c b/drivers/gpu/drm/ttm/ttm_bo.c
-index 76f03af89e8b1..7c3cf93c81fbd 100644
+index 76f03af89e8b..7c3cf93c81fb 100644
 --- a/drivers/gpu/drm/ttm/ttm_bo.c
 +++ b/drivers/gpu/drm/ttm/ttm_bo.c
 @@ -330,14 +330,14 @@ EXPORT_SYMBOL(ttm_bo_put);
@@ -47,7 +47,7 @@ index 76f03af89e8b1..7c3cf93c81fbd 100644
  }
  EXPORT_SYMBOL(ttm_bo_unlock_delayed_workqueue);
 diff --git a/include/drm/ttm/ttm_device.h b/include/drm/ttm/ttm_device.h
-index c22f30535c848..1116429c20007 100644
+index c22f30535c84..1116429c2000 100644
 --- a/include/drm/ttm/ttm_device.h
 +++ b/include/drm/ttm/ttm_device.h
 @@ -266,6 +266,11 @@ struct ttm_device {

@@ -1,4 +1,4 @@
-From c247fc62010597573530d7012860d2da71372f71 Mon Sep 17 00:00:00 2001
+From bfeb1c7722c92d9101142a32dddf95b1b0987a50 Mon Sep 17 00:00:00 2001
 From: Elizabeth Figura <zfigura@codeweavers.com>
 Date: Fri, 13 Dec 2024 13:35:05 -0600
 Subject: [PATCH 062/306] UPSTREAM: selftests: ntsync: Add some tests for
@@ -18,7 +18,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 141 insertions(+), 4 deletions(-)
 
 diff --git a/tools/testing/selftests/drivers/ntsync/ntsync.c b/tools/testing/selftests/drivers/ntsync/ntsync.c
-index 66a096cb20456..33348f0b621f2 100644
+index 66a096cb2045..33348f0b621f 100644
 --- a/tools/testing/selftests/drivers/ntsync/ntsync.c
 +++ b/tools/testing/selftests/drivers/ntsync/ntsync.c
 @@ -598,6 +598,7 @@ TEST(test_wait_any)

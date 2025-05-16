@@ -1,4 +1,4 @@
-From 15a109412b36df938650d1016d6e8fe49c9169ae Mon Sep 17 00:00:00 2001
+From 971a7935ecc2b7bcd62273cb9e404ff075e2f728 Mon Sep 17 00:00:00 2001
 From: Kexy Biscuit <kexybiscuit@aosc.io>
 Date: Sat, 25 Jan 2025 03:03:03 +0800
 Subject: [PATCH 181/306] AOSCOS: MIPS: loongson64: deselect
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/mips/Kconfig b/arch/mips/Kconfig
-index 8043e1892ca5f..af0cf50feefe4 100644
+index 8043e1892ca5..af0cf50feefe 100644
 --- a/arch/mips/Kconfig
 +++ b/arch/mips/Kconfig
 @@ -25,7 +25,7 @@ config MIPS

@@ -1,4 +1,4 @@
-From c2c90982bd3b1aa26e7ebadd210a5f357d0118a3 Mon Sep 17 00:00:00 2001
+From 5dc24aa3e164031728eb7e98db066d283a1d8e12 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Mon, 24 Feb 2025 14:01:03 +0800
 Subject: [PATCH 295/306] AOSCOS: drm/radeon: limit mmiowb() hack for
@@ -39,7 +39,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/drivers/gpu/drm/radeon/radeon_ring.c b/drivers/gpu/drm/radeon/radeon_ring.c
-index 346f0e49bb2ea..92aa8e1364c31 100644
+index 346f0e49bb2e..92aa8e1364c3 100644
 --- a/drivers/gpu/drm/radeon/radeon_ring.c
 +++ b/drivers/gpu/drm/radeon/radeon_ring.c
 @@ -185,7 +185,9 @@ void radeon_ring_commit(struct radeon_device *rdev, struct radeon_ring *ring,

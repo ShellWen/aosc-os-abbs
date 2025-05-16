@@ -1,4 +1,4 @@
-From 04acf1bcf3305cbe8e9242c28bb4479fb5b0a593 Mon Sep 17 00:00:00 2001
+From 58a821a1fa0afd95be5a95fcf87eb12f3651daa0 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Mon, 9 Dec 2024 17:24:26 +0800
 Subject: [PATCH 215/306] AOSCOS: gpio: use CPU_LOONGSON64 for GPIO_NCT6102
@@ -14,7 +14,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpio/Kconfig b/drivers/gpio/Kconfig
-index 63d84ca8e2728..432055865f788 100644
+index 63d84ca8e272..432055865f78 100644
 --- a/drivers/gpio/Kconfig
 +++ b/drivers/gpio/Kconfig
 @@ -527,7 +527,7 @@ config GPIO_NPCM_SGPIO

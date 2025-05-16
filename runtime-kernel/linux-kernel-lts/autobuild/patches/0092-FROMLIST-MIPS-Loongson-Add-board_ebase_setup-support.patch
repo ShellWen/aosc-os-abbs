@@ -1,4 +1,4 @@
-From 4062ea06b5c391f685aa29a9d3379bbd0ba3f5ad Mon Sep 17 00:00:00 2001
+From 178c6660d813a5445587f4064761dade318c6bac Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 12 Mar 2020 17:41:57 +0800
 Subject: [PATCH 092/306] FROMLIST: MIPS: Loongson: Add board_ebase_setup()
@@ -36,7 +36,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 11 insertions(+)
 
 diff --git a/arch/mips/loongson64/init.c b/arch/mips/loongson64/init.c
-index a35dd73117958..95602736a74f5 100644
+index a35dd7311795..95602736a74f 100644
 --- a/arch/mips/loongson64/init.c
 +++ b/arch/mips/loongson64/init.c
 @@ -22,6 +22,16 @@

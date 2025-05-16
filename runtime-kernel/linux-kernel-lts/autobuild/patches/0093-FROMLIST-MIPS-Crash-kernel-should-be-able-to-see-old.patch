@@ -1,4 +1,4 @@
-From bf0fd945985a87a22d8b4eba7df4c5b6679098f4 Mon Sep 17 00:00:00 2001
+From dc466e537bf6fc3a91e2a7327298211db85bd7ac Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhc@lemote.com>
 Date: Thu, 24 Sep 2020 18:07:57 +0800
 Subject: [PATCH 093/306] FROMLIST: MIPS: Crash kernel should be able to see
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/arch/mips/kernel/setup.c b/arch/mips/kernel/setup.c
-index 12a1a4ffb6021..50264d9ca2697 100644
+index 12a1a4ffb602..50264d9ca269 100644
 --- a/arch/mips/kernel/setup.c
 +++ b/arch/mips/kernel/setup.c
 @@ -357,8 +357,10 @@ static int __init early_parse_mem(char *p)

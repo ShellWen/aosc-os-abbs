@@ -1,4 +1,4 @@
-From 0d64981659703ac0c16c1bf34b333d910cdd2482 Mon Sep 17 00:00:00 2001
+From c523fd1c529db8a503b691e17982659fff0f9588 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 11:20:38 +0800
 Subject: [PATCH 243/306] AOSCOS: drm: radeon: limit MIPS Loongson-3
@@ -16,7 +16,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  2 files changed, 7 insertions(+)
 
 diff --git a/drivers/gpu/drm/radeon/evergreen.c b/drivers/gpu/drm/radeon/evergreen.c
-index 493022119c1a7..1a15f9264ead0 100644
+index 493022119c1a..1a15f9264ead 100644
 --- a/drivers/gpu/drm/radeon/evergreen.c
 +++ b/drivers/gpu/drm/radeon/evergreen.c
 @@ -1010,8 +1010,10 @@ static void evergreen_init_golden_registers(struct radeon_device *rdev)
@@ -31,7 +31,7 @@ index 493022119c1a7..1a15f9264ead0 100644
  		radeon_program_register_sequence(rdev,
  						 evergreen_golden_registers,
 diff --git a/drivers/gpu/drm/radeon/radeon_pm.c b/drivers/gpu/drm/radeon/radeon_pm.c
-index c6c60f1b64cbf..539065746db08 100644
+index c6c60f1b64cb..539065746db0 100644
 --- a/drivers/gpu/drm/radeon/radeon_pm.c
 +++ b/drivers/gpu/drm/radeon/radeon_pm.c
 @@ -1520,7 +1520,9 @@ int radeon_pm_init(struct radeon_device *rdev)

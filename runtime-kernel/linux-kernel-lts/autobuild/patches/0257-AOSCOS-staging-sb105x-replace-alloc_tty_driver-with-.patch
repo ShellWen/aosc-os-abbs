@@ -1,4 +1,4 @@
-From 4c571a2e289829d0a3402312cd70585af83ac27c Mon Sep 17 00:00:00 2001
+From e74564417242172dd23ce8c1395937cb7bd6bac9 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 15:21:26 +0800
 Subject: [PATCH 257/306] AOSCOS: staging: sb105x: replace alloc_tty_driver()
@@ -21,7 +21,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 4 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/staging/sb105x/sb_pci_mp.c b/drivers/staging/sb105x/sb_pci_mp.c
-index cd98d3b0183da..ccf02cfeb2fcc 100644
+index cd98d3b0183d..ccf02cfeb2fc 100644
 --- a/drivers/staging/sb105x/sb_pci_mp.c
 +++ b/drivers/staging/sb105x/sb_pci_mp.c
 @@ -1728,12 +1728,10 @@ static int mp_register_driver(struct uart_driver *drv)

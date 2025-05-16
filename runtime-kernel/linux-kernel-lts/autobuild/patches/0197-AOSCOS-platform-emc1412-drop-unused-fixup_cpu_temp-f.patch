@@ -1,4 +1,4 @@
-From 30d7486b2cd611536af51a7d027ae4ca1e058dd8 Mon Sep 17 00:00:00 2001
+From 7461da2946008c2c0efea00488c91c590ec77006 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 4 Dec 2024 15:49:40 +0800
 Subject: [PATCH 197/306] AOSCOS: platform: emc1412: drop unused
@@ -15,7 +15,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 60 deletions(-)
 
 diff --git a/drivers/platform/mips/emc1412.c b/drivers/platform/mips/emc1412.c
-index bf2fa4b815c8f..6524baddd6ca2 100644
+index bf2fa4b815c8..6524baddd6ca 100644
 --- a/drivers/platform/mips/emc1412.c
 +++ b/drivers/platform/mips/emc1412.c
 @@ -336,66 +336,6 @@ static void do_thermal_timer(struct work_struct *work)

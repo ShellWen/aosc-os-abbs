@@ -1,4 +1,4 @@
-From 4d8f64d16aabbb48b2bc4b1ac787740270bf1dc6 Mon Sep 17 00:00:00 2001
+From bf49b6121d8695f1efa1c650010b4b57c3c09633 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 11 Dec 2024 15:37:23 +0800
 Subject: [PATCH 258/306] AOSCOS: staging: sb105x: replace put_tty_driver()
@@ -18,7 +18,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/staging/sb105x/sb_pci_mp.c b/drivers/staging/sb105x/sb_pci_mp.c
-index ccf02cfeb2fcc..c5e1c39e7a7a2 100644
+index ccf02cfeb2fc..c5e1c39e7a7a 100644
 --- a/drivers/staging/sb105x/sb_pci_mp.c
 +++ b/drivers/staging/sb105x/sb_pci_mp.c
 @@ -1765,7 +1765,7 @@ for (i = 0; i < drv->nr; i++) {

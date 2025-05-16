@@ -1,4 +1,4 @@
-From 98b8e459176b65d54c9ed466fabce5a096b93c19 Mon Sep 17 00:00:00 2001
+From b812243c97ea9dfe26b4ffaf85e1a2c6117da160 Mon Sep 17 00:00:00 2001
 From: Runhua He <hua@aosc.io>
 Date: Wed, 7 May 2025 18:01:03 +0800
 Subject: [PATCH 306/306] BACKPORT: FROMLIST: platform/x86/amd/pmc: Declare
@@ -39,7 +39,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 7 insertions(+)
 
 diff --git a/drivers/platform/x86/amd/pmc/pmc-quirks.c b/drivers/platform/x86/amd/pmc/pmc-quirks.c
-index b4f49720c87f6..2e3f6fc67c568 100644
+index b4f49720c87f..2e3f6fc67c56 100644
 --- a/drivers/platform/x86/amd/pmc/pmc-quirks.c
 +++ b/drivers/platform/x86/amd/pmc/pmc-quirks.c
 @@ -217,6 +217,13 @@ static const struct dmi_system_id fwbug_list[] = {

@@ -1,4 +1,4 @@
-From d2a3cf52ec1cb27737e8ecc17f1edd3b22494fab Mon Sep 17 00:00:00 2001
+From 15ed8c7c51db05e0be8fc09af048d1d050e34d92 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 4 Dec 2024 17:54:18 +0800
 Subject: [PATCH 205/306] AOSCOS: input: atkbd: correct dependency for
@@ -17,7 +17,7 @@ Signed-off-by: Kexy Biscuit <kexybiscuit@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/input/keyboard/Kconfig b/drivers/input/keyboard/Kconfig
-index 2678b3132036a..dd127dac0b783 100644
+index 2678b3132036..dd127dac0b78 100644
 --- a/drivers/input/keyboard/Kconfig
 +++ b/drivers/input/keyboard/Kconfig
 @@ -158,7 +158,7 @@ config KEYBOARD_ATKBD_RDI_KEYCODES
